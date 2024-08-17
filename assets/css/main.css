@@ -224,6 +224,10 @@ section {
 	background-color: lightblue;
 }
 
+.langage-github {
+	background-color: gray
+}
+
 /* Basic */
 
 	@-ms-viewport {
