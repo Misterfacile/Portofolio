@@ -4068,3 +4068,28 @@ footer h3 {
 footer a {
 	color: white;
 }
+
+footer li {
+	color: white;
+}
+
+@media screen and (max-width: 1280px) {
+	
+	header a {
+		color: black;
+	}
+	
+	footer h3 {
+		color: black;
+	}
+	
+	footer a {
+		color: black;
+	}
+
+	footer li {
+		color: black;
+	}
+	
+
+}
