@@ -19,6 +19,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
+      VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+      VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,18 +35,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Export Vite env vars
-        run: |
-            echo "VITE_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
-            echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.VITE_EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
-            echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
-
+        
       - name: Debug env presence
         run: |
-            echo "PUBLIC key: ${VITE_EMAILJS_PUBLIC_KEY:+set}"
-            echo "SERVICE id: ${VITE_EMAILJS_SERVICE_ID:+set}"
-            echo "TEMPLATE id: ${VITE_EMAILJS_TEMPLATE_ID:+set}"
+          [ -z "$VITE_EMAILJS_PUBLIC_KEY" ] && echo "MISSING: VITE_EMAILJS_PUBLIC_KEY" || echo "PUBLIC key: set"
+          [ -z "$VITE_EMAILJS_SERVICE_ID" ] && echo "MISSING: VITE_EMAILJS_SERVICE_ID" || echo "SERVICE id: set"
+          [ -z "$VITE_EMAILJS_TEMPLATE_ID" ] && echo "MISSING: VITE_EMAILJS_TEMPLATE_ID" || echo "TEMPLATE id: set"
 
       - name: Build
         run: npm run build
