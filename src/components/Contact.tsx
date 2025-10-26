@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 interface ContactProps {
   email: string;
@@ -27,13 +28,25 @@ export const Contact = ({
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Init EmailJS once (with throttle like your old code)
+  useEffect(() => {
+    emailjs.init({
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      // Optional hardening:
+      blockHeadless: true,
+      limitRate: {
+        id: "app",
+        // allow 1 request per 10s
+        throttle: 10000,
+      },
+    });
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Check honeypot
-    if (formData.honeypot) {
-      return; // Likely a bot
-    }
+    // Honeypot (bots)
+    if (formData.honeypot) return;
 
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
@@ -59,8 +72,18 @@ export const Contact = ({
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission (replace with actual API call)
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Match your template variables (name, message, reply_to)
+      const templateParams = {
+        name: formData.name.trim(),
+        message: formData.message,
+        reply_to: formData.email.trim(),
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams
+      );
 
       toast({
         title: "Message sent!",
@@ -74,7 +97,8 @@ export const Contact = ({
         message: "",
         honeypot: "",
       });
-    } catch (error) {
+    } catch (err) {
+      // You can inspect err if needed
       toast({
         title: "Error",
         description: errorMessage,
@@ -93,7 +117,7 @@ export const Contact = ({
             Get In Touch
           </h2>
 
-          <p className="text-center text-lg text-muted-foreground mb-12">
+        <p className="text-center text-lg text-muted-foreground mb-12">
             Have a project in mind or want to discuss AI/Data opportunities?
             I'd love to hear from you!
           </p>
@@ -131,10 +155,7 @@ export const Contact = ({
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="email" className="block text-sm font-medium mb-2">
                   Email *
                 </label>
                 <Input
@@ -151,10 +172,7 @@ export const Contact = ({
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message *
                 </label>
                 <Textarea
