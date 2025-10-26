@@ -24,19 +24,24 @@ export const Contact = ({
     name: "",
     email: "",
     message: "",
-    honeypot: "", // Anti-spam field
+    honeypot: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Init EmailJS once (with throttle like your old code)
+  if (!import.meta.env.VITE_EMAILJS_PUBLIC_KEY ||
+    !import.meta.env.VITE_EMAILJS_SERVICE_ID ||
+    !import.meta.env.VITE_EMAILJS_TEMPLATE_ID) {
+  
+    console.warn("EmailJS envs are missing. Check your build secrets/variables.");
+  }
+  console.log("CHARGEMENT");
+  
   useEffect(() => {
     emailjs.init({
       publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-      // Optional hardening:
       blockHeadless: true,
       limitRate: {
         id: "app",
-        // allow 1 request per 10s
         throttle: 10000,
       },
     });
@@ -48,7 +53,6 @@ export const Contact = ({
     // Honeypot (bots)
     if (formData.honeypot) return;
 
-    // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Missing fields",
@@ -58,7 +62,6 @@ export const Contact = ({
       return;
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
@@ -72,7 +75,6 @@ export const Contact = ({
     setIsSubmitting(true);
 
     try {
-      // Match your template variables (name, message, reply_to)
       const templateParams = {
         name: formData.name.trim(),
         message: formData.message,
