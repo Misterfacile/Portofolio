@@ -34,9 +34,15 @@ jobs:
 
       - name: Export Vite env vars
         run: |
-          echo "VITE_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
-          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.VITE_EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
-          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
+            echo "VITE_EMAILJS_PUBLIC_KEY=${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
+            echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.VITE_EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
+            echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
+
+      - name: Debug env presence
+        run: |
+            echo "PUBLIC key: ${VITE_EMAILJS_PUBLIC_KEY:+set}"
+            echo "SERVICE id: ${VITE_EMAILJS_SERVICE_ID:+set}"
+            echo "TEMPLATE id: ${VITE_EMAILJS_TEMPLATE_ID:+set}"
 
       - name: Build
         run: npm run build
