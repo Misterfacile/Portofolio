@@ -34,7 +34,6 @@ export const Contact = ({
   
     console.warn("EmailJS envs are missing. Check your build secrets/variables.");
   }
-  console.log("CHARGEMENT");
   
   useEffect(() => {
     emailjs.init({
