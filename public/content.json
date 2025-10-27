@@ -306,7 +306,7 @@
       "title": "Tiger Compiler",
       "startDate": "2023-03",
       "endDate": "2023-05",
-      "images": ["/images/projects/TIger Compiler/Tiger.jpg"],
+      "images": ["/images/projects/Tiger Compiler/Tiger.jpg"],
       "description": "Implemented a compiler for Andrew W. Appel's Tiger language using C++",
       "tech": ["C++"],
       "links": {
