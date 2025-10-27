@@ -21,38 +21,59 @@ const navItems = [
   { id: "contact", label: "Contact" },
 ];
 
+const HEADER_OFFSET = 80;
+
 export const Navbar = ({ social }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState<string>("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Track shadow/background on scroll
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+    const onScroll = () => setIsScrolled(window.scrollY > 50);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-      // Update active section based on scroll position
-      const sections = navItems.map((item) => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
+  // Robust active section tracking
+  useEffect(() => {
+    const ids = navItems.map((n) => n.id);
+    const els = ids
+      .map((id) => document.getElementById(id))
+      .filter(Boolean) as HTMLElement[];
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(navItems[i].id);
-          break;
+    if (!("IntersectionObserver" in window) || els.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length === 0) return;
+        const topMost = visible.sort(
+          (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
+        )[0];
+
+        if (topMost?.target?.id) {
+          setActiveSection(topMost.target.id);
         }
+      },
+      {
+        root: null,
+        rootMargin: `-${HEADER_OFFSET}px 0px -65% 0px`,
+        threshold: 0,
       }
-    };
+    );
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    els.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setMobileMenuOpen(false);
-    }
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -63,7 +84,7 @@ export const Navbar = ({ social }: NavbarProps) => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          {/* Logo - Hidden per user request */}
+          {/* Logo placeholder (hidden by design) */}
           <div className="w-8" />
 
           {/* Desktop Navigation */}
@@ -72,15 +93,14 @@ export const Navbar = ({ social }: NavbarProps) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-3 py-2 text-sm font-medium transition-all relative ${
-                  activeSection === item.id
+                className={`px-3 py-2 text-sm font-medium transition-all relative
+                  ${activeSection === item.id
                     ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+                    : "text-muted-foreground hover:text-foreground"}`}
               >
                 {item.label}
                 {activeSection === item.id && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
+                  <span className="absolute -bottom-0.5 left-0 right-0 h-0.5 bg-primary" />
                 )}
               </button>
             ))}
@@ -88,12 +108,7 @@ export const Navbar = ({ social }: NavbarProps) => {
 
           {/* Social Icons */}
           <div className="hidden lg:flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              asChild
-              className="hover:text-primary"
-            >
+            <Button variant="ghost" size="icon" asChild className="hover:text-primary">
               <a
                 href={social.linkedin}
                 target="_blank"
@@ -103,12 +118,7 @@ export const Navbar = ({ social }: NavbarProps) => {
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              asChild
-              className="hover:text-primary"
-            >
+            <Button variant="ghost" size="icon" asChild className="hover:text-primary">
               <a
                 href={social.github}
                 target="_blank"
@@ -125,13 +135,9 @@ export const Navbar = ({ social }: NavbarProps) => {
             variant="ghost"
             size="icon"
             className="lg:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() => setMobileMenuOpen((o) => !o)}
           >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
 
@@ -143,11 +149,10 @@ export const Navbar = ({ social }: NavbarProps) => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-4 py-2 text-left rounded-md transition-all ${
-                    activeSection === item.id
+                  className={`px-4 py-2 text-left rounded-md transition-all
+                    ${activeSection === item.id
                       ? "bg-primary text-primary-foreground"
-                      : "hover:bg-muted"
-                  }`}
+                      : "hover:bg-muted"}`}
                 >
                   {item.label}
                 </button>
