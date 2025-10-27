@@ -18,7 +18,7 @@
   "about": {
     "bio": "Junior engineer in AI/DATA (NLP, Machine Learning, Deep Learning, ...), with a solid foundation in software and web development. Curious, proactive and versatile, I enjoy taking on challenges, learning continuously and actively contributing to innovative projects, both as part of a team and independently. My versatility and eagerness to learn are my greatest strengths, enabling me to adapt to any situation",
     "highlights": [
-      "AI & Deep Learning & NLP",
+      "Gen AI & LLM & Deep Learning & NLP",
       "ML Engineering & MLOps",
       "Big Data & Data Engineering & Analytics",
       "Sofware Engineering / Fullstack development"
@@ -40,7 +40,7 @@
         "Automated documentation of data retrieval workflows at SES Data services using AI-based tools, improving transparency and knowledge sharing",
         "Reviewed and optimized existing codebases across SES Data Services projects, enhancing performance and maintainability"
       ],
-      "tech": ["Python", "PySpark", "Azure", "Databricks", "Azure Devops"]
+      "tech": ["Python", "PySpark", "SQL", "Azure", "Azure Devops", "Databricks"]
     },
     {
       "company": "SII",
