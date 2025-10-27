@@ -92,7 +92,9 @@ export const Projects = ({ items }: ProjectsProps) => {
                       src={project.images[0]}
                       alt={project.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
+                      loading={index < 2 ? "eager" : "lazy"}
+                      fetchPriority={index < 2 ? "high" : "auto"}
+                      decoding="async"
                     />
                   ) : (
                     <Carousel
