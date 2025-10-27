@@ -37,7 +37,6 @@ export const Hero = ({
       size: number;
     }> = [];
 
-    // Create particles
     for (let i = 0; i < 50; i++) {
       particles.push({
         x: Math.random() * canvas.width,
