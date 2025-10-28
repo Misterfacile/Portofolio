@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { ParticleBackground } from "@/components/ParticleBackground";
 interface LoadingScreenProps {
   onLoadingComplete: () => void;
 }
@@ -32,7 +32,8 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background">
-      <div className="space-y-8 max-w-md w-full px-8">
+      <ParticleBackground/>
+      <div className="space-y-8 max-w-md w-full px-8 z-10">
         {/* Logo/Title */}
         <div className="text-center space-y-4">
           <div className="relative">
