@@ -146,12 +146,19 @@
       "logo": "/images/certifications/Microsoft.png"
     },
     {
+      "title": "Intro to Generative AI: A Beginner's Primer on Core Concepts",
+      "issuer": "Google Cloud",
+      "date": "2025-10",
+      "verifyUrl": "https://www.coursera.org/account/accomplishments/specialization/N6JQ1PEZTDVM",
+      "logo": "/images/certifications/Google_Cloud.png"
+    },
+    {
       "title": "Others certificates",
       "issuer": "Credly",
-      "date": "2025-10",
       "verifyUrl": "https://www.credly.com/users/paul-guan.056bec01/badges#credly",
       "logo": "/images/certifications/Credly.png"
     }
+    
   ],
   "projects": [
     {

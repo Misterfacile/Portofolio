@@ -11,7 +11,7 @@ interface SkillsProps {
 export const Skills = ({ skills }: SkillsProps) => {
   const categories = [
     { title: "Languages", items: skills.languages, icon: "💻" },
-    { title: "ML & AI", items: skills.ml, icon: "🤖" },
+    { title: "AI", items: skills.ml, icon: "🤖" },
     { title: "Data", items: skills.data, icon: "📊" },
     { title: "Cloud & DevOps", items: skills.cloud_devops, icon: "☁️" },
     { title: "Tools & Libraries", items: skills.tools, icon: "🛠️" },

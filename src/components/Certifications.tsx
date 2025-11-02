@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 interface CertificationItem {
   title: string;
   issuer: string;
-  date: string;
+  date?: string;
   verifyUrl: string;
   logo: string;
 }
@@ -52,10 +52,13 @@ export const Certifications = ({ items }: CertificationsProps) => {
                       {item.issuer}
                     </p>
                     
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-                      <Calendar className="w-4 h-4" />
-                      <span>{formatDate(item.date)}</span>
-                    </div>
+                    {item.date && (
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                        <Calendar className="w-4 h-4" />
+                        <span>{formatDate(item.date)}</span>
+                      </div>
+                    )}
+
                   </div>
 
                   <Button
