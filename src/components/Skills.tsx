@@ -1,20 +1,24 @@
 interface SkillsProps {
   skills: {
     languages: string[];
-    ml: string[];
-    data: string[];
-    cloud_devops: string[];
+    frameworks_libraries: string[];
+    databases: string[];
+    devops: string[];
+    cloud: string[];
     tools: string[];
+    softskills: string[];
   };
 }
 
 export const Skills = ({ skills }: SkillsProps) => {
   const categories = [
-    { title: "Languages", items: skills.languages, icon: "💻" },
-    { title: "AI", items: skills.ml, icon: "🤖" },
-    { title: "Data", items: skills.data, icon: "📊" },
-    { title: "Cloud & DevOps", items: skills.cloud_devops, icon: "☁️" },
-    { title: "Tools & Libraries", items: skills.tools, icon: "🛠️" },
+    { title: "Programming Languages", items: skills.languages, icon: "💻" },
+    { title: "Frameworks & Libraries", items: skills.frameworks_libraries, icon: "📚" },
+    { title: "Databases", items: skills.databases, icon: "🗂️" },
+    { title: "DevOps & CI/CD", items: skills.devops, icon: "♾️" },
+    { title: "Cloud", items: skills.cloud, icon: "☁️" },
+    { title: "Tools", items: skills.tools, icon: "🛠️" },
+    { title: "Softskills", items: skills.softskills, icon: "💪" },
   ];
 
   return (

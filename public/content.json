@@ -16,9 +16,9 @@
     "ctaSecondaryText": "Contact Me"
   },
   "about": {
-    "bio": "Junior engineer in AI/DATA (NLP, Machine Learning, Deep Learning, ...), with a solid foundation in software and web development. Curious, proactive and versatile, I enjoy taking on challenges, learning continuously and actively contributing to innovative projects, both as part of a team and independently. My versatility and eagerness to learn are my greatest strengths, enabling me to adapt to any situation",
+    "bio": "Junior Engineer in AI, Data, and Software Development, passionate about building intelligent, scalable systems. Currently seeking opportunities as a Data Engineer, AI Engineer, or Software Engineer to contribute to innovative, real-world projects. Driven by curiosity, adaptability, and a constant desire to learn and create meaningful impact.",
     "highlights": [
-      "Gen AI & LLM & Deep Learning & NLP",
+      "AI & Gen AI & LLMs & Deep Learning & NLP",
       "ML Engineering & MLOps",
       "Big Data & Data Engineering & Analytics",
       "Sofware Engineering / Fullstack development"
@@ -28,19 +28,19 @@
   "experience": [
     {
       "company": "SES Satellite",
-      "role": "Data Intern - Data Services",
+      "role": "Data Engineering Intern - Data Services",
       "location": "Betzdorf - Luxembourg",
       "from": "2025-09",
       "to": "present",
       "logo": "/images/experiences/SES.png",
       "bullets": [
-        "Designed and implemented ETL features for large-scale data retrieval using Python and PySpark",
-        "Developed end-to-end data pipelines in Azure Databricks, ensuring scalability and reliability",
-        "Documented and standardized data management processes leveraging the Medallion Architecture and Unified Metric Model (UMM)",
-        "Automated documentation of data retrieval workflows at SES Data services using AI-based tools, improving transparency and knowledge sharing",
-        "Reviewed and optimized existing codebases across SES Data Services projects, enhancing performance and maintainability"
+        "Designed and implemented ETL pipelines for large-scale data retrieval and transformation using Python and PySpark",
+        "Implemented end-to-end data pipelines in Azure Databricks, ensuring scalability and reliability",
+        "Defined and standardized data management processes leveraging the Medallion Architecture and Unified Metric Model (UMM)",
+        "Authored comprehensive data workflow documentation using AI-powered tools, achieving 300% faster delivery while improving process visibility, traceability, and data governance",
+        "Reviewed and optimized existing codebases across SES Data Services projects, enhancing 10%-20% performance and maintainability"
       ],
-      "tech": ["Python", "PySpark", "SQL", "Azure", "Azure Devops", "Databricks"]
+      "tech": ["SQL", "Python", "PySpark", "Kafka", "Delta Lake", "Azure Data Factory", "Azure Databricks", "Github Copilot", "MCP", "Azure"]
     },
     {
       "company": "SII",
@@ -50,14 +50,13 @@
       "to": "2025-08",
       "logo": "/images/experiences/SII/SII.png",
       "bullets": [
-        "Design and development of defence software and radar systems incorporating AI in development",
-        "Software development in C++ using the QT framework with the use of AI in development.", 
-        "Development and optimisation of specific prompts for LLMs, in particular Github Copilot",
-        "Research study on the effectiveness of using AI in software development",
-        "Technology watch on best practices and innovations in the field of AI and industrial software development",
+        "Developed defence-grade software and radar systems enhanced by AI technologies in C++ using Qt framework",
+        "Created and optimized targeted prompts for LLMs, including GitHub Copilot, resulting in a 50% productivity increase", 
+        "Researched and evaluated the effectiveness of AI in software engineering workflows and productivity through multiple use cases and KPI-driven analyses",
+        "Conducted continuous technology watch on AI innovations, best practices, and industrial software development methodologies",
         "AGILE Project"
       ],
-      "tech": ["C++", "Qt", "Gitlab CRI", "LLM", "Prompt Engineering", "Github Copilot", "AGILE"],
+      "tech": ["C++", "Qt", "Gitlab CRI", "MCP", "Github Copilot",  "Qt Creator"],
       "images": ["/images/experiences/SII/SII-1.jpg", "/images/experiences/SII/SII-2.jpg", "/images/experiences/SII/SII-3.jpg", "/images/experiences/SII/SII-4.jpg"]
     },
     {
@@ -68,12 +67,10 @@
       "to": "2024-02",
       "logo": "/images/experiences/Brainsonic/Brainsonic.png",
       "bullets": [
-        "Participation in the development of key projects on Symfony or Wordpress",
-        "Development of innovative features for internal websites and those of Brainsonic's clients",
-        "Active participation in resolving challenges/problems in collaboration with project teams (UIX Designer, Chief Project, Senor Developer, Clients",
-        "Creation of WebAPP/Online game from scratch",
-        "Backend dashboard (Analytics, Data, Dynamic Website)",
-        "Technologies : Web 3.0/HTML/CSS/JS/PHP/PostgreSQL/Heroku/WordPress"
+        "Designed, enhanced, and developed innovative web features for internal platforms and client websites using Symfony and WordPress",
+        "Partnered with design, product, and engineering teams to overcome technical challenges and deliver client-approved solutions meeting 100% satisfaction goals",
+        "Built Web Applications and Online Games from the ground up, ensuring optimal performance and scalability",
+        "Enhanced backend architecture RESTAPI / ORM and analytics dashboards to optimize data visualization performance and website management workflows, resulting in a 20–30% efficiency gain"
       ],
       "tech": ["Web 3.0", "HTML", "CSS", "JS", "PHP", "PostgreSQL", "Heroku", "WordPress"],
       "images": ["/images/experiences/Brainsonic/01.png", "/images/experiences/Brainsonic/02.png", "/images/experiences/Brainsonic/03.png", "/images/experiences/Brainsonic/04.png", "/images/experiences/Brainsonic/05.png"]
@@ -87,13 +84,18 @@
       "to": "2025",
       "details": [
         "Machine Learning",
-        "MLOPS",
         "Deep Learning",
         "Natural Language Processing",
         "Computer Vision",
         "Reinforcement Learning",
-        "Probabilistic Graphical Models",
+        "Prompt Engineering",
+        "DataOps",
+        "MLOps",
+        "MCP/RAG/CAG", 
         "AI/Gen-AI/LLM",
+        "API Integration",
+        "RESTful APIs",
+        "Probabilistic Graphical Models",
         "Algorithms & Data Structures",
         "Data Engineering/Analytics",
         "Big Data",
@@ -124,13 +126,22 @@
     }
   ],
   "skills": {
-    "languages": ["Python", "Java", "C", "C++", "SQL", "JavaScript", "HTML", "CSS", "PHP", "React", "TypeScript", "PySpark", "Shell"],
-    "ml": ["PyTorch", "TensorFlow", "scikit-learn", "HuggingFace", "Keras", "SparkML"],
-    "data": ["Airflow", "Spark", "Kafka", "Databricks", "RDBMS", "NOSQL"],
-    "cloud_devops": ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "MLflow"],
-    "tools": ["Pandas", "NumPy", "FastAPI", "Express", "Poetry", "Streamlit", "Jupyter", "Kaggle", "Google Colabs",  "Git", "Linux/MACOS/Windows", "Shopify", "Tiktok Shop"]
+    "languages": ["Python", "Java", "C", "C++", "SQL", "JavaScript", "HTML", "CSS", "PHP", "Shell"],
+    "frameworks_libraries": ["Symfony", "React", "Node.Js", "Qt", "Pyspark", "Kafka", "FastAPI", "Streamlit", "PyTorch", "TensorFlow", "scikit-learn", "HuggingFace", "Keras", "SparkML", "Numpy", "Pandas"],
+    "databases": ["PostgreSQL", "Cassandra", "MongoDB", "DynamoDB", "Neoj4"],
+    "devops": ["Docker", "Kubernetes", "Github Action"],
+    "cloud": ["AWS", "Azure", "Databricks"],
+    "tools": ["Jupyter", "Kaggle", "Google Colabs",  "Git", "VIM", "SVN", "Linux/MACOS/Windows", "Shopify", "Tiktok Shop"],
+    "softskills": ["Curiosity", "Autonomy",  "Communication", "Flexibility",  "Adaptability", "Problem Solving"]
   },
   "certifications": [
+    {
+      "title": "IBM AI Engineering Professional Certificate (V3)",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/bdb0f6a6-071f-4679-8330-d374d4f9e07f/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
     {
       "title": "IBM Data Engineering Professional Certificate",
       "issuer": "IBM",
@@ -161,6 +172,25 @@
     
   ],
   "projects": [
+    {
+      "title": "SaaS - TokManage, Tiktok Shop Live Management - Freelance work",
+      "startDate": "2025-08",
+      "endDate": "Present",
+      "images": ["/images/projects/TokManage/TokManage-1.png",
+      
+      "/images/projects/TokManage/TokManage-2.png",
+      "/images/projects/TokManage/TokManage-3.png",
+      "/images/projects/TokManage/TokManage-4.png",
+      "/images/projects/TokManage/TokManage-5.png",
+      "/images/projects/TokManage/TokManage-6.png",
+      "/images/projects/TokManage/TokManage-7.png"
+      ],
+      "description": "TokManage is a web platform designed to automate order and logistics management by integrating directly with TikTok Shop and Shopify APIs. It simplifies the export and synchronization of shipping files (CSV/Excel) while offering real-time tracking and visibility across the entire fulfillment process. The platform’s backend, built with FastAPI and SQLAlchemy, works seamlessly with a Streamlit-based dashboard that enables automatic carrier file generation, live order updates, and instant data visualization. An intelligent algorithm matches Shopify orders with tracking numbers, reducing manual processing by 90% and significantly improving operational efficiency. The system also automates bonus and work-hour calculations, providing transparent, performance-based rewards for logistics employees. Deployed in a containerized architecture using Docker and Kubernetes (kind), TokManage supports one-click deployment for both local and cloud environments, ensuring consistency and fast onboarding. Continuous integration and deployment are fully automated through GitHub Actions and Kubernetes manifests, allowing smooth, scalable, and reliable updates to the platform.",
+      "tech": ["Python", "Streamlit", "FastAPI", "PostgreSQL", "Docker", "Kubernetes", "Shopify API"],
+      "links": {
+      },
+      "tags": ["Software", "SaaS", "Data Engineering"]
+    },
     {
       "title": "Vinted Scrapper - Predictor Seller",
       "startDate": "2024-12",
