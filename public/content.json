@@ -136,6 +136,13 @@
   },
   "certifications": [
     {
+      "title": "IBM Generative AI Engineering Professional Certificate",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/f77f9065-72ad-45c1-b0bc-e5202d8382a7/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
+    {
       "title": "IBM AI Engineering Professional Certificate (V3)",
       "issuer": "IBM",
       "date": "2025-11",
