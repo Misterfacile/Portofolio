@@ -61,10 +61,10 @@
     },
     {
       "company": "Brainsonic",
-      "role": "Fullstack Developer",
+      "role": "Fullstack Developer (Internship + 3 months Freelance)",
       "location": "Paris - France ",
       "from": "2023-09",
-      "to": "2024-02",
+      "to": "2024-04",
       "logo": "/images/experiences/Brainsonic/Brainsonic.png",
       "bullets": [
         "Designed, enhanced, and developed innovative web features for internal platforms and client websites using Symfony and WordPress",
@@ -136,6 +136,20 @@
   },
   "certifications": [
     {
+      "title": "IBM DevOps and Software Engineering Professional Certificate",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/3a157c0b-95e7-4db9-9d2e-72809e657348/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
+    {
+      "title": "IBM AI Developper Professional Certificate",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/ad0f1b3b-7722-4811-8c31-8cae1ee6ba6a/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
+    {
       "title": "IBM Generative AI Engineering Professional Certificate",
       "issuer": "IBM",
       "date": "2025-11",
@@ -180,7 +194,7 @@
   ],
   "projects": [
     {
-      "title": "SaaS - TokManage, Tiktok Shop Live Management - Freelance work",
+      "title": "SaaS - TokManage, Tiktok Shop Live Management",
       "startDate": "2025-08",
       "endDate": "Present",
       "images": ["/images/projects/TokManage/TokManage-1.png",
@@ -196,7 +210,7 @@
       "tech": ["Python", "Streamlit", "FastAPI", "PostgreSQL", "Docker", "Kubernetes", "Shopify API"],
       "links": {
       },
-      "tags": ["Software", "SaaS", "Data Engineering"]
+      "tags": ["Software", "SaaS", "Data Engineering", "Freelance"]
     },
     {
       "title": "Vinted Scrapper - Predictor Seller",
@@ -208,6 +222,19 @@
       "links": {
       },
       "tags": ["Software", "Deep Learning", "Data Engineering", "Machine Learning"]
+    },
+    {
+      "title": "ERO (RDD) - Modeling and Benchmarking Queue Management Strategies for the Moulinette",
+      "startDate": "2024-12",
+      "endDate": "2024-01",
+      "images": ["/images/projects/Ero-2/Ero2-1.png", "/images/projects/Ero-2/Ero2-2.png", "/images/projects/Ero-2/Ero2-3.png", "/images/projects/Ero-2/Ero2-4.png", "/images/projects/Ero-2/Ero2-5.png", "/images/projects/Ero-2/Ero2-6.png"],
+      "description": "This project analyzes and simulates the queue mechanisms used by La Moulinette to process student submissions. We model two distinct behaviors: the sequential FIFO Waterfall model, where capacity constraints can create delays or rejections, and the Channels and Dams model, which introduces priorities to balance waiting times across user categories. Through extensive simulations on multiple random seeds and variable parameters such as server count, execution and result-sending rates, and tag configurations, our goal is to measure system performance, identify bottlenecks, and propose strategies to optimize throughput and user experience.",
+      "tech": ["Python"],
+      "links": {
+        "repo": "https://github.com/Misterfacile/ERO-2/tree/master",
+        "doc": "https://docs.google.com/document/d/1HJe4KdJdElMN9IanXR0ShrOc0rL6WcvB/edit"
+      },
+      "tags": ["Software"]
     },
     {
       "title": "Copilo.sh - WEB",
@@ -314,6 +341,18 @@
       "tags": ["Machine Learning", "Deep Learning", "NLP"]
     },
     {
+      "title": "Multi-Agent - Simulating behavior in the subway (RER B - Paris) with NetLogo",
+      "startDate": "2024-03",
+      "endDate": "2024-05",
+      "images": ["/images/projects/NetLogoSubway/NetLogoSubway-1.png", "/images/projects/NetLogoSubway/NetLogoSubway-2.png", "/images/projects/NetLogoSubway/NetLogoSubway-3.png", "/images/projects/NetLogoSubway/NetLogoSubway-4.png"],
+      "description": "Team project focused on modeling and analyzing passenger behavior in the subway using a multi-agent system. We simulated different types of agents (e.g., disciplined vs. disruptive passengers) with attributes such as size, weight, and speed, and tested various boarding and exiting strategies. The goal was to identify which collective behaviors optimize train flow, reduce congestion, and improve boarding efficiency. Multiple parameters allowed us to explore diverse real-world scenarios and evaluate the impact of incivility on overall fluidity.",
+      "tech": ["NetLogo"],
+      "links": {
+        "doc": "https://www.canva.com/design/DAGGRahxYZo/rPzyLv5v-0YVgATogy2qtg/edit"
+      },
+      "tags": ["Software"]
+    },
+    {
       "title": "Resolver Sudoku",
       "startDate": "2024-03",
       "endDate": "2024-04",
@@ -333,7 +372,7 @@
       "tech": ["JavaScript"],
       "links": {
       },
-      "tags": ["Software"]
+      "tags": ["Software", "Freelance"]
     },
     {
       "title": "IDE Shrek",

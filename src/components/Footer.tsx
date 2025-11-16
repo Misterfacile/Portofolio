@@ -13,7 +13,7 @@ export const Footer = ({ social }: FooterProps) => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground flex items-center gap-2">
-            V2.0.0 - 11 / 11 / 2025
+            V2.0.1 - 16 / 11 / 2025
           </p>
 
           <div className="flex items-center gap-4">
