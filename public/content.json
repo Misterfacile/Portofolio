@@ -34,11 +34,11 @@
       "to": "present",
       "logo": "/images/experiences/SES.png",
       "bullets": [
-        "Designed and implemented ETL pipelines for large-scale data retrieval and transformation using Python and PySpark",
-        "Implemented end-to-end data pipelines in Azure Databricks, ensuring scalability and reliability",
-        "Defined and standardized data management processes leveraging the Medallion Architecture and Unified Metric Model (UMM)",
-        "Authored comprehensive data workflow documentation using AI-powered tools, achieving 300% faster delivery while improving process visibility, traceability, and data governance",
-        "Reviewed and optimized existing codebases across SES Data Services projects, enhancing 10%-20% performance and maintainability"
+        "Built and maintained large-scale ETL pipelines using Python and PySpark for data extraction, transformation, and loading",
+        "Developed end-to-end data pipelines on Azure Databricks with a focus on scalability, reliability, and performance",
+        "Designed AI agents on Databricks to automate recovery actions and deploy autonomous monitoring for jobs and pipelines, improving operational efficiency by 20–40%",
+        "Standardized data processes using the Medallion Architecture and Unified Metric Model (UMM)",
+        "Created detailed documentation of data workflows using AI-assisted tools to improve visibility, traceability, and knowledge sharing."
       ],
       "tech": ["SQL", "Python", "PySpark", "Kafka", "Delta Lake", "Azure Data Factory", "Azure Databricks", "Github Copilot", "MCP", "Azure"]
     },
