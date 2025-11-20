@@ -43,6 +43,32 @@
       "tech": ["SQL", "Python", "PySpark", "Kafka", "Delta Lake", "Azure Data Factory", "Azure Databricks", "Github Copilot", "MCP", "Azure"]
     },
     {
+      "company": "Blinky Origins",
+      "role": "Co-Founder - Part-time",
+      "location": "Aubervilliers - France",
+      "from": "2025-04",
+      "to": "2025-11",
+      "logo": "/images/experiences/BlinkyOrigins/blinky_origins.webp",
+      "bullets": [
+        "Launched Blinky Origins at the early rollout of TikTok Shop France (April 2025)",
+        "Designed and implemented marketing strategies that boosted brand visibility and contributed to rapid growth on TikTok Shop",
+        "Developed and applied sales strategies tailored to the livestream audience to maximize conversion rates and adapt product presentation to the right target demographic",
+        "Delivered strong customer service by assisting clients, handling escalations, and ensuring a smooth end-to-end shopping experience",
+        "Took full ownership of the technical infrastructure (full-stack development, backend workflows, logistics systems)",
+        "Built and deployed the Shopify store and fully integrated it with TikTok Shop",
+        "Developed the brand website (blinky-origins.com) and ensured stable e-commerce operations",
+        "Managed and coordinated the team running daily TikTok Shop livestreams",
+        "Identified major limitations in TikTok Shop’s logistics tools and designed custom solutions",
+        "Created an internal Python/Streamlit SaaS automating ~90% of the logistics workflow (addresses, tracking numbers, order matching)",
+        "Designed and implemented algorithms to match TikTok Shop orders with Shopify orders and auto-assign tracking IDs",
+        "Deployed the SaaS with Docker and Kubernetes on both macOS and Windows",
+        "Refactored the architecture to ensure maintainability, scalability, and long-term reliability",
+        "Gained hands-on experience in technical ownership, rapid problem-solving, and early-stage startup operations"
+      ],
+      "tech": ["Python", "Streamlit", "Docker", "Kubernetes", "Shopify", "TikTok Shop Integration", "FastAPI", "PostgreSQL", "CI/CD", "REST APIs", "Leadership", "Problem-Solving", "Adaptability", "Communication", "Entrepreneurial Mindset", "Time Management", "Customer-Centric Approach", "Creativity", "Resilience", "Strategic Thinking", "Project Ownership"],
+      "images": ["/images/experiences/BlinkyOrigins/Blinky-1.png", "/images/experiences/BlinkyOrigins/Blinky-2.png", "/images/experiences/BlinkyOrigins/Blinky-3.png", "/images/experiences/BlinkyOrigins/Blinky-4.png"]
+    },
+    {
       "company": "SII",
       "role": "Sofware Engineer - AI",
       "location": "Vélizy-Villacoublay - Ile de France - France ",
@@ -60,6 +86,24 @@
       "images": ["/images/experiences/SII/SII-1.jpg", "/images/experiences/SII/SII-2.jpg", "/images/experiences/SII/SII-3.jpg", "/images/experiences/SII/SII-4.jpg"]
     },
     {
+      "company": "Nana Bistrot Thai",
+      "role": "Head Waiter - Part-time",
+      "location": "Paris - France ",
+      "from": "2023-07",
+      "to": "2025-04",
+      "logo": "/images/experiences/NanaBistroThai.png",
+      "bullets": [
+        "Managed guest orders with a daily service volume of 30 to 200 covers",
+        "Delivered high-quality table service and ensured excellent customer experience",
+        "Built customer loyalty through personalized attention and consistent service",
+        "Coordinated the floor team (waiters, runners) and delegated tasks effectively",
+        "Oversaw cleanliness, organization, and overall floor setup",
+        "Trained and onboarded new recruits to ensure consistent service standards",
+        "Efficiently handled high-pressure rush periods with continuous 8-hour shifts"
+      ],
+      "tech": ["Customer service excellence", "Multitasking in high-volume environments", "Service workflow optimization", "Leadership", "Communication", "Empathy & customer-oriented mindset", "Teamwork", "Adaptability", "Stress management", "Responsibility & accountability"]
+    },
+    {
       "company": "Brainsonic",
       "role": "Fullstack Developer (Internship + 3 months Freelance)",
       "location": "Paris - France ",
@@ -74,6 +118,39 @@
       ],
       "tech": ["Web 3.0", "HTML", "CSS", "JS", "PHP", "PostgreSQL", "Heroku", "WordPress"],
       "images": ["/images/experiences/Brainsonic/01.png", "/images/experiences/Brainsonic/02.png", "/images/experiences/Brainsonic/03.png", "/images/experiences/Brainsonic/04.png", "/images/experiences/Brainsonic/05.png"]
+    },
+    {
+      "company": "TrantranZai",
+      "role": "Waiter - Fulltime",
+      "location": "Paris - France ",
+      "from": "2022-05",
+      "to": "2022-09",
+      "logo": "/images/experiences/trantranzai.png",
+      "bullets": [
+        "Order taking",
+        "Table service",
+        "Keeping the restaurant clean",
+        "Storing merchandise",
+        "Rush"
+      ],
+      "tech": ["Organization", "Leadership", "Customer Service", "Autonomy", "Team Spirit"]
+    },
+    {
+      "company": "Winner Bag",
+      "role": "Multi-skilled employee B2B - Fulltime",
+      "location": "Aubervilliers - France",
+      "from": "2021-07",
+      "to": "2021-08",
+      "logo": "",
+      "bullets": [
+        "B2B sales of bags",
+        "Ordering in line with customer demand",
+        "Storing merchandise",
+        "Keeping the store clean",
+        "Manutention",
+        "Cash desk management"
+      ],
+      "tech": ["Organization", "Leadership", "Customer Service", "Sales", "Autonomy"]
     }
   ],
   "education": [
