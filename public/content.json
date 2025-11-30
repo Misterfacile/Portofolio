@@ -28,7 +28,7 @@
   "experience": [
     {
       "company": "SES Satellite",
-      "role": "Data Engineer",
+      "role": "Data Engineer - AI",
       "location": "Betzdorf - Luxembourg",
       "from": "2025-09",
       "to": "present",
@@ -37,6 +37,7 @@
         "Built and maintained large-scale ETL pipelines using Python and PySpark for data extraction, transformation, and loading",
         "Developed end-to-end data pipelines on Azure Databricks with a focus on scalability, reliability, and performance",
         "Designed Agentic System on Databricks to automate recovery actions and deploy autonomous monitoring for jobs and pipelines, improving operational efficiency by 20–40%, using MLflow / LangChain / RAG",
+        "Reduced engineering workload by automating job monitoring, log analysis, and anomaly detection across pipelines with AI agents",
         "Standardized data processes using the Medallion Architecture and Unified Metric Model (UMM)",
         "Created detailed documentation of data workflows using AI-assisted tools to improve visibility, traceability, and knowledge sharing."
       ],
