@@ -28,7 +28,7 @@
   "experience": [
     {
       "company": "SES Satellite",
-      "role": "Data Engineering Intern - Data Services",
+      "role": "Data Engineer",
       "location": "Betzdorf - Luxembourg",
       "from": "2025-09",
       "to": "present",
@@ -36,15 +36,15 @@
       "bullets": [
         "Built and maintained large-scale ETL pipelines using Python and PySpark for data extraction, transformation, and loading",
         "Developed end-to-end data pipelines on Azure Databricks with a focus on scalability, reliability, and performance",
-        "Designed AI agents on Databricks to automate recovery actions and deploy autonomous monitoring for jobs and pipelines, improving operational efficiency by 20–40%",
+        "Designed Agentic System on Databricks to automate recovery actions and deploy autonomous monitoring for jobs and pipelines, improving operational efficiency by 20–40%, using MLflow / LangChain / RAG",
         "Standardized data processes using the Medallion Architecture and Unified Metric Model (UMM)",
         "Created detailed documentation of data workflows using AI-assisted tools to improve visibility, traceability, and knowledge sharing."
       ],
-      "tech": ["SQL", "Python", "PySpark", "Kafka", "Delta Lake", "Azure Data Factory", "Azure Databricks", "Github Copilot", "MCP", "Azure"]
+      "tech": ["SQL", "Python", "PySpark", "Kafka", "Delta Lake", "Azure Databricks", "Databricks Agent", "MLflow", "Github Copilot", "Azure"]
     },
     {
       "company": "Blinky Origins",
-      "role": "Co-Founder - Part-time",
+      "role": "Co-Founder",
       "location": "Aubervilliers - France",
       "from": "2025-04",
       "to": "2025-11",
@@ -204,7 +204,7 @@
   ],
   "skills": {
     "languages": ["Python", "Java", "C", "C++", "SQL", "JavaScript", "HTML", "CSS", "PHP", "Shell"],
-    "frameworks_libraries": ["Symfony", "React", "Node.Js", "Qt", "Pyspark", "Kafka", "FastAPI", "Streamlit", "PyTorch", "TensorFlow", "scikit-learn", "HuggingFace", "Keras", "SparkML", "Numpy", "Pandas"],
+    "frameworks_libraries": ["Symfony", "React", "Node.Js", "Qt", "PySpark", "Kafka", "FastAPI", "Streamlit", "PyTorch", "TensorFlow", "scikit-learn", "HuggingFace", "Keras", "SparkML", "Numpy", "Pandas", "Databricks", "MLflow"],
     "databases": ["PostgreSQL", "Cassandra", "MongoDB", "DynamoDB", "Neoj4"],
     "devops": ["Docker", "Kubernetes", "Github Action"],
     "cloud": ["AWS", "Azure", "Databricks"],
