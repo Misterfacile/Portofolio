@@ -319,7 +319,7 @@
       "endDate": "2024-12",
       "images": ["/images/projects/Copilosh/Architecture CopiloSH Web.png", "/images/projects/Copilosh/Copilosh.png"],
       "description": "Copilo.sh is a Python project designed as a wrapper function that can be added to a .bashrc or .zshrc file. It monitors terminal activity, catching errors (non-zero exit codes) and forwarding them to a FastAPI local server running a lightweight language model (LM) on CPU, which generates helpful responses to resolve the errors. The system was later deployed on a Microsoft Azure VM as a canary deployment, making the API accessible remotely without requiring local execution.",
-      "tech": ["Python", "React", "Docker", "FastAPI", "Microsoft Azure"],
+      "tech": ["Python", "React", "Docker", "FastAPI", "Microsoft Azure", "Llama", "HuggingFace"],
       "links": {
         "repo": "https://github.com/Misterfacile/CopiloSH",
         "live": "https://drive.google.com/file/d/1TMz7-njys61Gy3mExDFGapakw1ecEvZM/view?usp=sharing"
@@ -411,7 +411,7 @@
       "endDate": "2024-05",
       "images": ["/images/projects/NLP-Restaurant/NLP-Restaurant-1.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-2.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-3.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-4.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-5.png"],
       "description": "Developed a Python project for restaurant review classification using the SemEval-ABSA dataset. The workflow included dataset preprocessing with NLTK, regex, and byte-pair encoding for tokenization and normalization (stopword removal, lemmatization, lowercase conversion), followed by exploratory data statistics. Several predictive models were trained and compared, including Recurrent Neural Networks (RNNs) and Naive Bayes classifiers, to evaluate performance on sentiment and aspect-based classification tasks.",
-      "tech": ["Python", "NLTK", "Scikit-learn", "Keras", "RNN", "Pandas", "Numpy", "Matplotlib", "Seaborn", "Torchj"],
+      "tech": ["Python", "NLTK", "Scikit-learn", "Keras", "RNN", "Pandas", "Numpy", "Matplotlib", "Seaborn", "Torch", "HuggingFace"],
       "links": {
         "repo": "https://github.com/Misterfacile/NLP-Classification-Review-Restaurant"
       },
