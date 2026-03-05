@@ -21,14 +21,13 @@ const navItems = [
   { id: "contact", label: "Contact" },
 ];
 
-const HEADER_OFFSET = 80;
+const HEADER_OFFSET = 120;
 
 export const Navbar = ({ social }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Track shadow/background on scroll
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 50);
     onScroll();
@@ -36,51 +35,51 @@ export const Navbar = ({ social }: NavbarProps) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Robust active section tracking
   useEffect(() => {
-    const ids = navItems.map((n) => n.id);
-    const els = ids
-      .map((id) => document.getElementById(id))
-      .filter(Boolean) as HTMLElement[];
+    const handleScroll = () => {
+      const ids = navItems.map((n) => n.id);
+      const els = ids
+        .map((id) => document.getElementById(id))
+        .filter(Boolean) as HTMLElement[];
 
-    if (!("IntersectionObserver" in window) || els.length === 0) return;
+      if (els.length === 0) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries.filter((e) => e.isIntersecting);
-        if (visible.length === 0) return;
-        const topMost = visible.sort(
-          (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
-        )[0];
+      let closestSection = els[0].id;
+      let closestDistance = Math.abs(
+        els[0].getBoundingClientRect().top - HEADER_OFFSET
+      );
 
-        if (topMost?.target?.id) {
-          setActiveSection(topMost.target.id);
+      for (const el of els) {
+        const distance = Math.abs(el.getBoundingClientRect().top - HEADER_OFFSET);
+        if (el.getBoundingClientRect().top >= HEADER_OFFSET && distance < closestDistance) {
+          closestSection = el.id;
+          closestDistance = distance;
         }
-      },
-      {
-        root: null,
-        rootMargin: `-${HEADER_OFFSET}px 0px -65% 0px`,
-        threshold: 0,
       }
-    );
 
-    els.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+      setActiveSection(closestSection);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
-    if (!el) return;
+    if (!el) {
+      console.warn(`Section with id "${id}" not found`);
+      return;
+    }
+    setActiveSection(id);
+    setMobileMenuOpen(false);
     const y = el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
     window.scrollTo({ top: y, behavior: "smooth" });
-    setMobileMenuOpen(false);
   };
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass shadow-lg py-2" : "bg-transparent py-4"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-lg py-2" : "bg-transparent py-4"
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
