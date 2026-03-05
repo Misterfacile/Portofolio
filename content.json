@@ -16,9 +16,9 @@
     "ctaSecondaryText": "Contact Me"
   },
   "about": {
-    "bio": "Junior engineer in AI/DATA (NLP, Machine Learning, Deep Learning, ...), with a solid foundation in software and web development. Curious, proactive and versatile, I enjoy taking on challenges, learning continuously and actively contributing to innovative projects, both as part of a team and independently. My versatility and eagerness to learn are my greatest strengths, enabling me to adapt to any situation",
+    "bio": "Junior Engineer in AI, Data, and Software Development, passionate about building intelligent, scalable systems. Currently seeking opportunities as a Data Engineer, AI Engineer, or Software Engineer to contribute to innovative, real-world projects. Driven by curiosity, adaptability, and a constant desire to learn and create meaningful impact.",
     "highlights": [
-      "AI & Deep Learning & NLP",
+      "AI & Gen AI & LLMs & Deep Learning & NLP",
       "ML Engineering & MLOps",
       "Big Data & Data Engineering & Analytics",
       "Sofware Engineering / Fullstack development"
@@ -28,19 +28,85 @@
   "experience": [
     {
       "company": "SES Satellite",
-      "role": "Data Intern - Data Services",
+      "role": "Data Engineer - AI",
       "location": "Betzdorf - Luxembourg",
       "from": "2025-09",
-      "to": "present",
+      "to": "2026-03",
       "logo": "/images/experiences/SES.png",
       "bullets": [
-        "Designed and implemented ETL features for large-scale data retrieval using Python and PySpark",
-        "Developed end-to-end data pipelines in Azure Databricks, ensuring scalability and reliability",
-        "Documented and standardized data management processes leveraging the Medallion Architecture and Unified Metric Model (UMM)",
-        "Automated documentation of data retrieval workflows at SES Data services using AI-based tools, improving transparency and knowledge sharing",
-        "Reviewed and optimized existing codebases across SES Data Services projects, enhancing performance and maintainability"
+        "Design and maintenance of large-scale ETL/ELT pipelines using Python and PySpark on the Databricks cloud",
+        "Standardized data processes using Medallion architecture and the Unified Metric Model (UMM)",
+        "Creation from scratch of a lightweight, production-grade AI agent system native to Databricks for monitoring jobs/pipelines/clusters, triggering corrective actions with human HITL confirmation integrating the Databricks MCP server / Databricks Genie / RAG; while complying with the company's data security and governance constraints; improvement of operational efficiency by 20 to 40%",
+        "Creation of a conversational chat agent enabling interaction with the Agentic system via the Streamlit and Chainlit frameworks deployed on Databricks App, enabling a versatile Agent Support chat on Databricks and the possibility of expanding external systems",
+        "Implementation of a classic CI/CD pipeline on Azure DevOps with Databricks Asset Bundles for automated deployment of the Agentic System",
+        "Full end-to-end deployment of the Agentic System on Azure Databricks with appropriate resource configurations depending on the situation.",
+        "Creation of detailed documentation of the SES Data Services department's data system using AI-assisted tools to improve visibility, traceability, and knowledge sharing."
       ],
-      "tech": ["Python", "PySpark", "Azure", "Databricks", "Azure Devops"]
+      "tech": [
+        "SQL",
+        "Python",
+        "PySpark",
+        "Kafka",
+        "Delta Lake",
+        "Azure Databricks",
+        "Databricks Agent",
+        "MLflow",
+        "Github Copilot",
+        "Azure"
+      ]
+    },
+    {
+      "company": "Blinky Origins",
+      "role": "Co-Founder",
+      "location": "Aubervilliers - France",
+      "from": "2025-04",
+      "to": "2025-11",
+      "logo": "/images/experiences/BlinkyOrigins/blinky_origins.webp",
+      "bullets": [
+        "Launched Blinky Origins at the early rollout of TikTok Shop France (April 2025)",
+        "Designed and implemented marketing strategies that boosted brand visibility and contributed to rapid growth on TikTok Shop",
+        "Developed and applied sales strategies tailored to the livestream audience to maximize conversion rates and adapt product presentation to the right target demographic",
+        "Delivered strong customer service by assisting clients, handling escalations, and ensuring a smooth end-to-end shopping experience",
+        "Took full ownership of the technical infrastructure (full-stack development, backend workflows, logistics systems)",
+        "Built and deployed the Shopify store and fully integrated it with TikTok Shop",
+        "Developed the brand website (blinky-origins.com) and ensured stable e-commerce operations",
+        "Managed and coordinated the team running daily TikTok Shop livestreams",
+        "Identified major limitations in TikTok Shop’s logistics tools and designed custom solutions",
+        "Created an internal Python/Streamlit SaaS automating ~90% of the logistics workflow (addresses, tracking numbers, order matching)",
+        "Designed and implemented algorithms to match TikTok Shop orders with Shopify orders and auto-assign tracking IDs",
+        "Deployed the SaaS with Docker and Kubernetes on both macOS and Windows",
+        "Refactored the architecture to ensure maintainability, scalability, and long-term reliability",
+        "Gained hands-on experience in technical ownership, rapid problem-solving, and early-stage startup operations"
+      ],
+      "tech": [
+        "Python",
+        "Streamlit",
+        "Docker",
+        "Kubernetes",
+        "Shopify",
+        "TikTok Shop Integration",
+        "FastAPI",
+        "PostgreSQL",
+        "CI/CD",
+        "REST APIs",
+        "Leadership",
+        "Problem-Solving",
+        "Adaptability",
+        "Communication",
+        "Entrepreneurial Mindset",
+        "Time Management",
+        "Customer-Centric Approach",
+        "Creativity",
+        "Resilience",
+        "Strategic Thinking",
+        "Project Ownership"
+      ],
+      "images": [
+        "/images/experiences/BlinkyOrigins/Blinky-1.png",
+        "/images/experiences/BlinkyOrigins/Blinky-2.png",
+        "/images/experiences/BlinkyOrigins/Blinky-3.png",
+        "/images/experiences/BlinkyOrigins/Blinky-4.png"
+      ]
     },
     {
       "company": "SII",
@@ -50,33 +116,131 @@
       "to": "2025-08",
       "logo": "/images/experiences/SII/SII.png",
       "bullets": [
-        "Design and development of defence software and radar systems incorporating AI in development",
-        "Software development in C++ using the QT framework with the use of AI in development.", 
-        "Development and optimisation of specific prompts for LLMs, in particular Github Copilot",
-        "Research study on the effectiveness of using AI in software development",
-        "Technology watch on best practices and innovations in the field of AI and industrial software development",
+        "Developed defence-grade software and radar systems enhanced by AI technologies in C++ using Qt framework",
+        "Created and optimized targeted prompts for LLMs, including GitHub Copilot, resulting in a 50% productivity increase",
+        "Researched and evaluated the effectiveness of AI in software engineering workflows and productivity through multiple use cases and KPI-driven analyses",
+        "Conducted continuous technology watch on AI innovations, best practices, and industrial software development methodologies",
         "AGILE Project"
       ],
-      "tech": ["C++", "Qt", "Gitlab CRI", "LLM", "Prompt Engineering", "Github Copilot", "AGILE"],
-      "images": ["/images/experiences/SII/SII-1.jpg", "/images/experiences/SII/SII-2.jpg", "/images/experiences/SII/SII-3.jpg", "/images/experiences/SII/SII-4.jpg"]
+      "tech": [
+        "C++",
+        "Qt",
+        "Gitlab CRI",
+        "MCP",
+        "Github Copilot",
+        "Qt Creator"
+      ],
+      "images": [
+        "/images/experiences/SII/SII-1.jpg",
+        "/images/experiences/SII/SII-2.jpg",
+        "/images/experiences/SII/SII-3.jpg",
+        "/images/experiences/SII/SII-4.jpg"
+      ]
+    },
+    {
+      "company": "Nana Bistrot Thai",
+      "role": "Head Waiter - Part-time",
+      "location": "Paris - France ",
+      "from": "2023-07",
+      "to": "2025-04",
+      "logo": "/images/experiences/NanaBistroThai.png",
+      "bullets": [
+        "Managed guest orders with a daily service volume of 30 to 200 covers",
+        "Delivered high-quality table service and ensured excellent customer experience",
+        "Built customer loyalty through personalized attention and consistent service",
+        "Coordinated the floor team (waiters, runners) and delegated tasks effectively",
+        "Oversaw cleanliness, organization, and overall floor setup",
+        "Trained and onboarded new recruits to ensure consistent service standards",
+        "Efficiently handled high-pressure rush periods with continuous 8-hour shifts"
+      ],
+      "tech": [
+        "Customer service excellence",
+        "Multitasking in high-volume environments",
+        "Service workflow optimization",
+        "Leadership",
+        "Communication",
+        "Empathy & customer-oriented mindset",
+        "Teamwork",
+        "Adaptability",
+        "Stress management",
+        "Responsibility & accountability"
+      ]
     },
     {
       "company": "Brainsonic",
-      "role": "Fullstack Developer",
+      "role": "Fullstack Developer (Internship + 3 months Freelance)",
       "location": "Paris - France ",
       "from": "2023-09",
-      "to": "2024-02",
+      "to": "2024-04",
       "logo": "/images/experiences/Brainsonic/Brainsonic.png",
       "bullets": [
-        "Participation in the development of key projects on Symfony or Wordpress",
-        "Development of innovative features for internal websites and those of Brainsonic's clients",
-        "Active participation in resolving challenges/problems in collaboration with project teams (UIX Designer, Chief Project, Senor Developer, Clients",
-        "Creation of WebAPP/Online game from scratch",
-        "Backend dashboard (Analytics, Data, Dynamic Website)",
-        "Technologies : Web 3.0/HTML/CSS/JS/PHP/PostgreSQL/Heroku/WordPress"
+        "Designed, enhanced, and developed innovative web features for internal platforms and client websites using Symfony and WordPress",
+        "Partnered with design, product, and engineering teams to overcome technical challenges and deliver client-approved solutions meeting 100% satisfaction goals",
+        "Built Web Applications and Online Games from the ground up, ensuring optimal performance and scalability",
+        "Enhanced backend architecture RESTAPI / ORM and analytics dashboards to optimize data visualization performance and website management workflows, resulting in a 20–30% efficiency gain"
       ],
-      "tech": ["Web 3.0", "HTML", "CSS", "JS", "PHP", "PostgreSQL", "Heroku", "WordPress"],
-      "images": ["/images/experiences/Brainsonic/01.png", "/images/experiences/Brainsonic/02.png", "/images/experiences/Brainsonic/03.png", "/images/experiences/Brainsonic/04.png", "/images/experiences/Brainsonic/05.png"]
+      "tech": [
+        "Web 3.0",
+        "HTML",
+        "CSS",
+        "JS",
+        "PHP",
+        "PostgreSQL",
+        "Heroku",
+        "WordPress"
+      ],
+      "images": [
+        "/images/experiences/Brainsonic/01.png",
+        "/images/experiences/Brainsonic/02.png",
+        "/images/experiences/Brainsonic/03.png",
+        "/images/experiences/Brainsonic/04.png",
+        "/images/experiences/Brainsonic/05.png"
+      ]
+    },
+    {
+      "company": "TrantranZai",
+      "role": "Waiter - Fulltime",
+      "location": "Paris - France ",
+      "from": "2022-05",
+      "to": "2022-09",
+      "logo": "/images/experiences/trantranzai.png",
+      "bullets": [
+        "Order taking",
+        "Table service",
+        "Keeping the restaurant clean",
+        "Storing merchandise",
+        "Rush"
+      ],
+      "tech": [
+        "Organization",
+        "Leadership",
+        "Customer Service",
+        "Autonomy",
+        "Team Spirit"
+      ]
+    },
+    {
+      "company": "Winner Bag",
+      "role": "Multi-skilled employee B2B - Fulltime",
+      "location": "Aubervilliers - France",
+      "from": "2021-07",
+      "to": "2021-08",
+      "logo": "",
+      "bullets": [
+        "B2B sales of bags",
+        "Ordering in line with customer demand",
+        "Storing merchandise",
+        "Keeping the store clean",
+        "Manutention",
+        "Cash desk management"
+      ],
+      "tech": [
+        "Organization",
+        "Leadership",
+        "Customer Service",
+        "Sales",
+        "Autonomy"
+      ]
     }
   ],
   "education": [
@@ -87,13 +251,18 @@
       "to": "2025",
       "details": [
         "Machine Learning",
-        "MLOPS",
         "Deep Learning",
         "Natural Language Processing",
         "Computer Vision",
         "Reinforcement Learning",
-        "Probabilistic Graphical Models",
+        "Prompt Engineering",
+        "DataOps",
+        "MLOps",
+        "MCP/RAG/CAG",
         "AI/Gen-AI/LLM",
+        "API Integration",
+        "RESTful APIs",
+        "Probabilistic Graphical Models",
         "Algorithms & Data Structures",
         "Data Engineering/Analytics",
         "Big Data",
@@ -124,13 +293,104 @@
     }
   ],
   "skills": {
-    "languages": ["Python", "Java", "C", "C++", "SQL", "JavaScript", "HTML", "CSS", "PHP", "React", "TypeScript", "PySpark", "Shell"],
-    "ml": ["PyTorch", "TensorFlow", "scikit-learn", "HuggingFace", "Keras", "SparkML"],
-    "data": ["Airflow", "Spark", "Kafka", "Databricks", "RDBMS", "NOSQL"],
-    "cloud_devops": ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "MLflow"],
-    "tools": ["Pandas", "NumPy", "FastAPI", "Express", "Poetry", "Streamlit", "Jupyter", "Kaggle", "Google Colabs",  "Git", "Linux/MACOS/Windows", "Shopify", "Tiktok Shop"]
+    "languages": [
+      "Python",
+      "Java",
+      "C",
+      "C++",
+      "SQL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "PHP",
+      "Shell"
+    ],
+    "frameworks_libraries": [
+      "Symfony",
+      "React",
+      "Node.Js",
+      "Qt",
+      "PySpark",
+      "Kafka",
+      "FastAPI",
+      "Streamlit",
+      "PyTorch",
+      "TensorFlow",
+      "scikit-learn",
+      "HuggingFace",
+      "Keras",
+      "SparkML",
+      "Numpy",
+      "Pandas",
+      "Databricks",
+      "MLflow"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "Cassandra",
+      "MongoDB",
+      "DynamoDB",
+      "Neoj4"
+    ],
+    "devops": [
+      "Docker",
+      "Kubernetes",
+      "Github Action"
+    ],
+    "cloud": [
+      "AWS",
+      "Azure",
+      "Databricks"
+    ],
+    "tools": [
+      "Jupyter",
+      "Kaggle",
+      "Google Colabs",
+      "Git",
+      "VIM",
+      "SVN",
+      "Linux/MACOS/Windows",
+      "Shopify",
+      "Tiktok Shop"
+    ],
+    "softskills": [
+      "Curiosity",
+      "Autonomy",
+      "Communication",
+      "Flexibility",
+      "Adaptability",
+      "Problem Solving"
+    ]
   },
   "certifications": [
+    {
+      "title": "IBM DevOps and Software Engineering Professional Certificate",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/3a157c0b-95e7-4db9-9d2e-72809e657348/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
+    {
+      "title": "IBM AI Developper Professional Certificate",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/ad0f1b3b-7722-4811-8c31-8cae1ee6ba6a/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
+    {
+      "title": "IBM Generative AI Engineering Professional Certificate",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/f77f9065-72ad-45c1-b0bc-e5202d8382a7/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
+    {
+      "title": "IBM AI Engineering Professional Certificate (V3)",
+      "issuer": "IBM",
+      "date": "2025-11",
+      "verifyUrl": "https://www.credly.com/badges/bdb0f6a6-071f-4679-8330-d374d4f9e07f/public_url",
+      "logo": "/images/certifications/IBM.webp"
+    },
     {
       "title": "IBM Data Engineering Professional Certificate",
       "issuer": "IBM",
@@ -146,231 +406,522 @@
       "logo": "/images/certifications/Microsoft.png"
     },
     {
+      "title": "Intro to Generative AI: A Beginner's Primer on Core Concepts",
+      "issuer": "Google Cloud",
+      "date": "2025-10",
+      "verifyUrl": "https://www.coursera.org/account/accomplishments/specialization/N6JQ1PEZTDVM",
+      "logo": "/images/certifications/Google_Cloud.png"
+    },
+    {
       "title": "Others certificates",
       "issuer": "Credly",
-      "date": "2025-10",
       "verifyUrl": "https://www.credly.com/users/paul-guan.056bec01/badges#credly",
       "logo": "/images/certifications/Credly.png"
     }
   ],
   "projects": [
     {
+      "title": "SaaS - TokManage, Tiktok Shop Live Management",
+      "startDate": "2025-08",
+      "endDate": "Present",
+      "images": [
+        "/images/projects/TokManage/TokManage-1.png",
+        "/images/projects/TokManage/TokManage-2.png",
+        "/images/projects/TokManage/TokManage-3.png",
+        "/images/projects/TokManage/TokManage-4.png",
+        "/images/projects/TokManage/TokManage-5.png",
+        "/images/projects/TokManage/TokManage-6.png",
+        "/images/projects/TokManage/TokManage-7.png"
+      ],
+      "description": "TokManage is a web platform designed to automate order and logistics management by integrating directly with TikTok Shop and Shopify APIs. It simplifies the export and synchronization of shipping files (CSV/Excel) while offering real-time tracking and visibility across the entire fulfillment process. The platform’s backend, built with FastAPI and SQLAlchemy, works seamlessly with a Streamlit-based dashboard that enables automatic carrier file generation, live order updates, and instant data visualization. An intelligent algorithm matches Shopify orders with tracking numbers, reducing manual processing by 90% and significantly improving operational efficiency. The system also automates bonus and work-hour calculations, providing transparent, performance-based rewards for logistics employees. Deployed in a containerized architecture using Docker and Kubernetes (kind), TokManage supports one-click deployment for both local and cloud environments, ensuring consistency and fast onboarding. Continuous integration and deployment are fully automated through GitHub Actions and Kubernetes manifests, allowing smooth, scalable, and reliable updates to the platform.",
+      "tech": [
+        "Python",
+        "Streamlit",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "Kubernetes",
+        "Shopify API"
+      ],
+      "links": {},
+      "tags": [
+        "Software",
+        "SaaS",
+        "Data Engineering",
+        "Freelance"
+      ]
+    },
+    {
       "title": "Vinted Scrapper - Predictor Seller",
       "startDate": "2024-12",
       "endDate": "2024-01",
-      "images": ["/images/projects/VintedScrapper/VintedScrapper-1.png", "/images/projects/VintedScrapper/VintedScrapper-2.png", "/images/projects/VintedScrapper/VintedScrapper-3.png", "/images/projects/VintedScrapper/VintedScrapper-4.png", "/images/projects/VintedScrapper/VintedScrapper-5.png", "/images/projects/VintedScrapper/VintedScrapper-6.png", "/images/projects/VintedScrapper/VintedScrapper-7.png", "/images/projects/VintedScrapper/VintedScrapper-8.png"],
+      "images": [
+        "/images/projects/VintedScrapper/VintedScrapper-1.png",
+        "/images/projects/VintedScrapper/VintedScrapper-2.png",
+        "/images/projects/VintedScrapper/VintedScrapper-3.png",
+        "/images/projects/VintedScrapper/VintedScrapper-4.png",
+        "/images/projects/VintedScrapper/VintedScrapper-5.png",
+        "/images/projects/VintedScrapper/VintedScrapper-6.png",
+        "/images/projects/VintedScrapper/VintedScrapper-7.png",
+        "/images/projects/VintedScrapper/VintedScrapper-8.png"
+      ],
       "description": "Developed a data-driven analytics and prediction pipeline based on e-commerce data. The project involved structured data collection through web scraping with Python (BeautifulSoup, Scrapy, Selenium) while handling anti-DDOS protection mechanisms. Scraped data was cleansed, transformed, and stored in formats such as Pandas DataFrames, CSV/Excel, and integrated into a Cassandra database for large-scale analysis. Data was then labeled and pre-processed for Machine Learning tasks. An interactive Streamlit dashboard with dynamic filters enabled targeted analysis and visualization of trends, pricing, and user behavior. Additionally, a predictive model leveraging CamemBERT (Hugging Face) was developed to estimate whether an item would sell within a given timeframe, achieving an accuracy of ~70%.",
-      "tech": ["Python", "Apache Cassandra", "Streamlit", "Docker"],
+      "tech": [
+        "Python",
+        "Apache Cassandra",
+        "Streamlit",
+        "Docker"
+      ],
+      "links": {},
+      "tags": [
+        "Software",
+        "Deep Learning",
+        "Data Engineering",
+        "Machine Learning"
+      ]
+    },
+    {
+      "title": "ERO (RDD) - Modeling and Benchmarking Queue Management Strategies for the Moulinette",
+      "startDate": "2024-12",
+      "endDate": "2024-01",
+      "images": [
+        "/images/projects/Ero-2/Ero2-1.png",
+        "/images/projects/Ero-2/Ero2-2.png",
+        "/images/projects/Ero-2/Ero2-3.png",
+        "/images/projects/Ero-2/Ero2-4.png",
+        "/images/projects/Ero-2/Ero2-5.png",
+        "/images/projects/Ero-2/Ero2-6.png"
+      ],
+      "description": "This project analyzes and simulates the queue mechanisms used by La Moulinette to process student submissions. We model two distinct behaviors: the sequential FIFO Waterfall model, where capacity constraints can create delays or rejections, and the Channels and Dams model, which introduces priorities to balance waiting times across user categories. Through extensive simulations on multiple random seeds and variable parameters such as server count, execution and result-sending rates, and tag configurations, our goal is to measure system performance, identify bottlenecks, and propose strategies to optimize throughput and user experience.",
+      "tech": [
+        "Python"
+      ],
       "links": {
+        "repo": "https://github.com/Misterfacile/ERO-2/tree/master",
+        "doc": "https://docs.google.com/document/d/1HJe4KdJdElMN9IanXR0ShrOc0rL6WcvB/edit"
       },
-      "tags": ["Software", "Deep Learning", "Data Engineering", "Machine Learning"]
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "Copilo.sh - WEB",
       "startDate": "2024-12",
       "endDate": "2024-12",
-      "images": ["/images/projects/Copilosh/Architecture CopiloSH Web.png", "/images/projects/Copilosh/Copilosh.png"],
+      "images": [
+        "/images/projects/Copilosh/Architecture CopiloSH Web.png",
+        "/images/projects/Copilosh/Copilosh.png"
+      ],
       "description": "Copilo.sh is a Python project designed as a wrapper function that can be added to a .bashrc or .zshrc file. It monitors terminal activity, catching errors (non-zero exit codes) and forwarding them to a FastAPI local server running a lightweight language model (LM) on CPU, which generates helpful responses to resolve the errors. The system was later deployed on a Microsoft Azure VM as a canary deployment, making the API accessible remotely without requiring local execution.",
-      "tech": ["Python", "React", "Docker", "FastAPI", "Microsoft Azure"],
+      "tech": [
+        "Python",
+        "React",
+        "Docker",
+        "FastAPI",
+        "Microsoft Azure",
+        "Llama",
+        "HuggingFace"
+      ],
       "links": {
         "repo": "https://github.com/Misterfacile/CopiloSH",
         "live": "https://drive.google.com/file/d/1TMz7-njys61Gy3mExDFGapakw1ecEvZM/view?usp=sharing"
       },
-      "tags": ["Software", "NLP", "Cloud"]
+      "tags": [
+        "Software",
+        "NLP",
+        "Cloud"
+      ]
     },
-        {
+    {
       "title": "Big Data Pipeline - BIG CACA",
       "startDate": "2024-11",
       "endDate": "2024-11",
-      "images": ["/images/projects/BigCACA/BigCACA-1.png", "/images/projects/BigCACA/BigCACA-2.png", "/images/projects/BigCACA/BigCACA-3.png", "/images/projects/BigCACA/BigCACA-4.png"],
+      "images": [
+        "/images/projects/BigCACA/BigCACA-1.png",
+        "/images/projects/BigCACA/BigCACA-2.png",
+        "/images/projects/BigCACA/BigCACA-3.png",
+        "/images/projects/BigCACA/BigCACA-4.png"
+      ],
       "description": "The goal of this project was to analyze customer data using Apache Spark to extract insights into customer behavior and transaction trends. We processed and analyzed a dataset containing customer profiles and transactions, applying both analytics and machine learning techniques to uncover deeper patterns. The data pipeline was deployed on AWS, leveraging S3, EMR, Step Functions, and EventBridge for scalable processing. Infrastructure was automated with Terraform, and the preprocessed data was integrated into Amazon DocumentDB for efficient storage and querying",
-      "tech": ["Python", "PySpark", "AWS S3/StepFunction/EventBridge/DocumentDB", "Terraform"],
-      "links": {
-      },
-      "tags": ["Big Data", "Data Engineering", "Data Analytics", "Machine Learning"]
+      "tech": [
+        "Python",
+        "PySpark",
+        "AWS S3/StepFunction/EventBridge/DocumentDB",
+        "Terraform"
+      ],
+      "links": {},
+      "tags": [
+        "Big Data",
+        "Data Engineering",
+        "Data Analytics",
+        "Machine Learning"
+      ]
     },
     {
       "title": "Recommender Jobs Backend - Company Matchly",
       "startDate": "2024-09",
       "endDate": "2024-12",
-      "images": ["/images/projects/Matchly/Matchly-1.jpg"],
+      "images": [
+        "/images/projects/Matchly/Matchly-1.jpg"
+      ],
       "description": "Implemented a job recommendation solution at Matchly, designed for both clients and recruiters. The project involved extracting and structuring data from job description sheets, followed by the determination of soft skills scores based on a predefined set of characteristics. We worked on the continuous improvement of supervised and unsupervised NLP models to enhance content quality, leveraging BERT and BIRD models for language understanding. A recommendation engine was built using K-Means clustering and cosine similarity, while a backend API was developed to deliver the system’s functionalities.",
-      "tech": ["Python", "Scikit-learn", "FastAPI", "BERT/BIRD"],
-      "links": {
-      },
-      "tags": ["NLP", "Recommender", "Deep Learning"]
+      "tech": [
+        "Python",
+        "Scikit-learn",
+        "FastAPI",
+        "BERT/BIRD"
+      ],
+      "links": {},
+      "tags": [
+        "NLP",
+        "Recommender",
+        "Deep Learning"
+      ]
     },
     {
       "title": "Movies Recommender",
       "startDate": "2024-06",
       "endDate": "2024-06",
-      "images": ["/images/projects/MoviesRecommender/MoviesRecommender-1.png", "/images/projects/MoviesRecommender/MoviesRecommender-2.png", "/images/projects/MoviesRecommender/MoviesRecommender-3.png", "/images/projects/MoviesRecommender/MoviesRecommender-4.png", "/images/projects/MoviesRecommender/MoviesRecommender-5.png"],
+      "images": [
+        "/images/projects/MoviesRecommender/MoviesRecommender-1.png",
+        "/images/projects/MoviesRecommender/MoviesRecommender-2.png",
+        "/images/projects/MoviesRecommender/MoviesRecommender-3.png",
+        "/images/projects/MoviesRecommender/MoviesRecommender-4.png",
+        "/images/projects/MoviesRecommender/MoviesRecommender-5.png"
+      ],
       "description": "Developed a movie recommender system by combining collaborative filtering and content-based filtering techniques. The system was trained and evaluated using the MovieLens and IMDB datasets to deliver personalized movie recommendations",
-      "tech": ["Python", "Pandas", "NumPy", "Scikit-learn"],
+      "tech": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn"
+      ],
       "links": {
         "repo": "https://github.com/Misterfacile/Recommender_Movies"
       },
-      "tags": ["NLP", "Recommender"]
+      "tags": [
+        "NLP",
+        "Recommender"
+      ]
     },
     {
       "title": "AWS - TermiCator",
       "startDate": "2024-06",
       "endDate": "2024-06",
-      "images": ["/images/projects/TermiCator/TermiCator-1.png", "/images/projects/TermiCator/TermiCator-2.png", "/images/projects/TermiCator/TermiCator-3.png", "/images/projects/TermiCator/TermiCator-4.png", "/images/projects/TermiCator/TermiCator-5.png", "/images/projects/TermiCator/TermiCator-6.png"],
+      "images": [
+        "/images/projects/TermiCator/TermiCator-1.png",
+        "/images/projects/TermiCator/TermiCator-2.png",
+        "/images/projects/TermiCator/TermiCator-3.png",
+        "/images/projects/TermiCator/TermiCator-4.png",
+        "/images/projects/TermiCator/TermiCator-5.png",
+        "/images/projects/TermiCator/TermiCator-6.png"
+      ],
       "description": "Developed a Scala-based streaming alert system to process data from simulated IoT devices and notify users based on predefined criteria. The project focused on scalability and real-time data handling, leveraging AWS Kinesis, Firehose, S3, DynamoDB, and EMR for ingestion, storage, and processing. Infrastructure was provisioned with Terraform, ensuring reproducible and scalable deployment.",
-      "tech": ["Scala", "AWS Kinesis", "AWS S3/Firehose/DynamoDB/EMR", "Terraform"],
-      "links": {
-      },
-      "tags": ["Software", "Cloud", "Data Engineering"]
+      "tech": [
+        "Scala",
+        "AWS Kinesis",
+        "AWS S3/Firehose/DynamoDB/EMR",
+        "Terraform"
+      ],
+      "links": {},
+      "tags": [
+        "Software",
+        "Cloud",
+        "Data Engineering"
+      ]
     },
     {
       "title": "Microsoft Azure - Weather Prediction",
       "startDate": "2024-06",
       "endDate": "2024-06",
-      "images": ["/images/projects/WeatherAzur/WeatherAzur-1.png", "/images/projects/WeatherAzur/WeatherAzur-2.png"],
+      "images": [
+        "/images/projects/WeatherAzur/WeatherAzur-1.png",
+        "/images/projects/WeatherAzur/WeatherAzur-2.png"
+      ],
       "description": "Developed a simple weather prediction system on Microsoft Azure, leveraging Custom Vision and Azure Machine Learning for model training and deployment. The solution was integrated into an Azure Web App service, providing a lightweight interface for predictions.",
-      "tech": ["Python", "Microsoft Azure", "Custom Vision", "Azure Machine Learning", "Azure Web App"],
-      "links": {
-      },
-      "tags": ["Software", "Cloud", "Computer Vision"]
+      "tech": [
+        "Python",
+        "Microsoft Azure",
+        "Custom Vision",
+        "Azure Machine Learning",
+        "Azure Web App"
+      ],
+      "links": {},
+      "tags": [
+        "Software",
+        "Cloud",
+        "Computer Vision"
+      ]
     },
     {
       "title": "Big Data - Stocks Dashboard",
       "startDate": "2024-04",
       "endDate": "2024-05",
-      "images": ["/images/projects/PYDB/PYDB-1.png", "/images/projects/PYDB/PYDB-2.png", "/images/projects/PYDB/PYDB-3.png"],
+      "images": [
+        "/images/projects/PYDB/PYDB-1.png",
+        "/images/projects/PYDB/PYDB-2.png",
+        "/images/projects/PYDB/PYDB-3.png"
+      ],
       "description": "Developed a Python application to visualize company stock prices, including reading, cleaning, and storing large volumes of financial data. Leveraged NumPy, Pandas, and Matplotlib for data processing and analysis, and built an interactive dashboard with Dash to display stock trends and insights.",
-      "tech": ["Python", "Pandas", "TimeSeriesDB", "Dash"],
+      "tech": [
+        "Python",
+        "Pandas",
+        "TimeSeriesDB",
+        "Dash"
+      ],
       "links": {
         "repo": "https://github.com/Misterfacile/Big-Data-StocksDashboard"
       },
-      "tags": ["Software", "Big Data", "Data Engineering"]
+      "tags": [
+        "Software",
+        "Big Data",
+        "Data Engineering"
+      ]
     },
     {
       "title": "CNN - Boat Image classification",
       "startDate": "2024-05",
       "endDate": "2024-05",
-      "images": ["/images/projects/CNN-Navire/CNN-1.png", "/images/projects/CNN-Navire/CNN-2.png", "/images/projects/CNN-Navire/CNN-3.png"],
+      "images": [
+        "/images/projects/CNN-Navire/CNN-1.png",
+        "/images/projects/CNN-Navire/CNN-2.png",
+        "/images/projects/CNN-Navire/CNN-3.png"
+      ],
       "description": "Built a TensorFlow/Keras CNN to classify ship images into 10 categories, including data preprocessing, model architecture design, and training with tracked metrics (accuracy, loss, confusion matrix) to evaluate performance and guide iterations",
-      "tech": ["Python", "TensorFlow", "Keras", "NumPy", "Pandas", "Matplotlib"],
-      "links": {
-      },
-      "tags": ["Computer Vision", "Deep Learning"]
+      "tech": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "NumPy",
+        "Pandas",
+        "Matplotlib"
+      ],
+      "links": {},
+      "tags": [
+        "Computer Vision",
+        "Deep Learning"
+      ]
     },
     {
       "title": "NLP - Restaurant reviews classification",
       "startDate": "2024-04",
       "endDate": "2024-05",
-      "images": ["/images/projects/NLP-Restaurant/NLP-Restaurant-1.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-2.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-3.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-4.png", "/images/projects/NLP-Restaurant/NLP-Restaurant-5.png"],
+      "images": [
+        "/images/projects/NLP-Restaurant/NLP-Restaurant-1.png",
+        "/images/projects/NLP-Restaurant/NLP-Restaurant-2.png",
+        "/images/projects/NLP-Restaurant/NLP-Restaurant-3.png",
+        "/images/projects/NLP-Restaurant/NLP-Restaurant-4.png",
+        "/images/projects/NLP-Restaurant/NLP-Restaurant-5.png"
+      ],
       "description": "Developed a Python project for restaurant review classification using the SemEval-ABSA dataset. The workflow included dataset preprocessing with NLTK, regex, and byte-pair encoding for tokenization and normalization (stopword removal, lemmatization, lowercase conversion), followed by exploratory data statistics. Several predictive models were trained and compared, including Recurrent Neural Networks (RNNs) and Naive Bayes classifiers, to evaluate performance on sentiment and aspect-based classification tasks.",
-      "tech": ["Python", "NLTK", "Scikit-learn", "Keras", "RNN", "Pandas", "Numpy", "Matplotlib", "Seaborn", "Torchj"],
+      "tech": [
+        "Python",
+        "NLTK",
+        "Scikit-learn",
+        "Keras",
+        "RNN",
+        "Pandas",
+        "Numpy",
+        "Matplotlib",
+        "Seaborn",
+        "Torch",
+        "HuggingFace"
+      ],
       "links": {
         "repo": "https://github.com/Misterfacile/NLP-Classification-Review-Restaurant"
       },
-      "tags": ["Machine Learning", "Deep Learning", "NLP"]
+      "tags": [
+        "Machine Learning",
+        "Deep Learning",
+        "NLP"
+      ]
+    },
+    {
+      "title": "Multi-Agent - Simulating behavior in the subway (RER B - Paris) with NetLogo",
+      "startDate": "2024-03",
+      "endDate": "2024-05",
+      "images": [
+        "/images/projects/NetLogoSubway/NetLogoSubway-1.png",
+        "/images/projects/NetLogoSubway/NetLogoSubway-2.png",
+        "/images/projects/NetLogoSubway/NetLogoSubway-3.png",
+        "/images/projects/NetLogoSubway/NetLogoSubway-4.png"
+      ],
+      "description": "Team project focused on modeling and analyzing passenger behavior in the subway using a multi-agent system. We simulated different types of agents (e.g., disciplined vs. disruptive passengers) with attributes such as size, weight, and speed, and tested various boarding and exiting strategies. The goal was to identify which collective behaviors optimize train flow, reduce congestion, and improve boarding efficiency. Multiple parameters allowed us to explore diverse real-world scenarios and evaluate the impact of incivility on overall fluidity.",
+      "tech": [
+        "NetLogo"
+      ],
+      "links": {
+        "doc": "https://www.canva.com/design/DAGGRahxYZo/rPzyLv5v-0YVgATogy2qtg/edit"
+      },
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "Resolver Sudoku",
       "startDate": "2024-03",
       "endDate": "2024-04",
-      "images": ["/images/projects/Resolver Sudoku/ResolverSudoku.jpg"],
+      "images": [
+        "/images/projects/Resolver Sudoku/ResolverSudoku.jpg"
+      ],
       "description": "Developed a Sudoku solver in C# implementing the Dancing Links algorithm (DLX) to efficiently resolve exact cover problems and achieve fast puzzle solving",
-      "tech": ["C#"],
-      "links": {
-      },
-      "tags": ["Software"]
+      "tech": [
+        "C#"
+      ],
+      "links": {},
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "UIMM - WorkAdventurer",
       "startDate": "2024-03",
       "endDate": "2024-04",
-      "images": ["/images/projects/UIMM/UIMM-1.png"],
+      "images": [
+        "/images/projects/UIMM/UIMM-1.png"
+      ],
       "description": "Developed a web game for Brainsonic’s clients using the WorkAdventure framework and JavaScript, integrating custom maps, interactive quests, and branded assets to deliver an engaging, browser-based experience within virtual office spaces.",
-      "tech": ["JavaScript"],
-      "links": {
-      },
-      "tags": ["Software"]
+      "tech": [
+        "JavaScript"
+      ],
+      "links": {},
+      "tags": [
+        "Software",
+        "Freelance"
+      ]
     },
     {
       "title": "IDE Shrek",
       "startDate": "2023-06",
       "endDate": "2023-07",
-      "images": ["/images/projects/Shrek-IDE/ShrekIDE-1.png", "/images/projects/Shrek-IDE/ShrekIDE-2.png", "/images/projects/Shrek-IDE/ShrekIDE-3.png"],
+      "images": [
+        "/images/projects/Shrek-IDE/ShrekIDE-1.png",
+        "/images/projects/Shrek-IDE/ShrekIDE-2.png",
+        "/images/projects/Shrek-IDE/ShrekIDE-3.png"
+      ],
       "description": "Developed a Shrek-themed Integrated Development Environment (IDE) with a Java backend and a JavaScript/React frontend. The IDE supported Python code execution, core file operations (create, open, delete, move), and integrated Git and Maven functionalities. The final deliverable was containerized and deployed using Docker",
-      "tech": ["Java, JavaScript, React, Git, Maven, Docker"],
-      "links": {
-      },
-      "tags": ["Software"]
+      "tech": [
+        "Java, JavaScript, React, Git, Maven, Docker"
+      ],
+      "links": {},
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "Tiger Compiler",
       "startDate": "2023-03",
       "endDate": "2023-05",
-      "images": ["/images/projects/TIger Compiler/Tiger.jpg"],
+      "images": [
+        "/images/projects/Tiger Compiler/Tiger.jpg"
+      ],
       "description": "Implemented a compiler for Andrew W. Appel's Tiger language using C++",
-      "tech": ["C++"],
-      "links": {
-      },
-      "tags": ["Software"]
+      "tech": [
+        "C++"
+      ],
+      "links": {},
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "BombermanWeb",
       "startDate": "2023-02",
       "endDate": "2023-02",
-      "images": ["/images/projects/Bomberman/Bomberman.jpg"],
+      "images": [
+        "/images/projects/Bomberman/Bomberman.jpg"
+      ],
       "description": "Developed a Bomberman-inspired Web game in Java, featuring player movement, bomb placement, explosion mechanics and score.",
-      "tech": ["Java"],
+      "tech": [
+        "Java"
+      ],
       "links": {
         "repo": "https://github.com/Misterfacile/BombermanWeb"
       },
-      "tags": ["Software"]
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "42sh",
       "startDate": "2023-01",
       "endDate": "2023-02",
-      "images": ["/images/projects/42sh/42.png"],
+      "images": [
+        "/images/projects/42sh/42.png"
+      ],
       "description": "42sh is a project that involved building a POSIX-compliant shell from scratch, implementing core features of Unix shells such as command parsing, job control, redirections, and environment variable management, while ensuring full compliance with POSIX standards - Contact me for the link of the project",
-      "tech": ["C"],
-      "links": {
-      },
-      "tags": ["Software"]
+      "tech": [
+        "C"
+      ],
+      "links": {},
+      "tags": [
+        "Software"
+      ]
     },
     {
       "title": "Genetic Pipeline to detect Cancer with the Institute Curie",
       "startDate": "2022-02",
       "endDate": "2022-02",
-      "images": ["/images/projects/GeneticPipeline/Pipeline.png", "/images/projects/GeneticPipeline/ReadProcess.png"],
+      "images": [
+        "/images/projects/GeneticPipeline/Pipeline.png",
+        "/images/projects/GeneticPipeline/ReadProcess.png"
+      ],
       "description": "This project, carried out in collaboration with the Institut Curie, focused on the recognition of cancer-causing genetic variants using advanced computational techniques. Developed a data processing pipeline with Snakemake, implemented neural networks in Keras for variant detection, and integrated bioinformatics tools such as Varsim, Samtools, and IGV for analysis.",
-      "tech": ["Python", "SVN", "Varsim", "Samtools", "IGV", "Snakemake", "Keras"],
+      "tech": [
+        "Python",
+        "SVN",
+        "Varsim",
+        "Samtools",
+        "IGV",
+        "Snakemake",
+        "Keras"
+      ],
       "links": {
         "repo": "https://github.com/denliA/BioinformaticPipelineCNN"
       },
-      "tags": ["Computer Vision", "Deep Learning"]
+      "tags": [
+        "Computer Vision",
+        "Deep Learning"
+      ]
     },
     {
       "title": "Coins Recognition",
       "startDate": "2022-02",
       "endDate": "2022-02",
-      "images": ["/images/projects/CoinsRecognition/coins.png"],
+      "images": [
+        "/images/projects/CoinsRecognition/coins.png"
+      ],
       "description": "Developed an image processing system in Python to recognize and segment coins. The project involved implementing noise reduction algorithms, coin detection techniques, and segmentation methods to accurately identify currency from images.",
-      "tech": ["Python"],
+      "tech": [
+        "Python"
+      ],
       "links": {
         "repo": "https://github.com/Misterfacile/MoneyRecognition"
       },
-      "tags": ["Computer Vision"]
+      "tags": [
+        "Computer Vision"
+      ]
     },
     {
       "title": "Competition of puck picking robot",
       "startDate": "2021-01",
       "endDate": "2021-05",
-      "images": ["/images/projects/Robotique/robotique.png"],
+      "images": [
+        "/images/projects/Robotique/robotique.png"
+      ],
       "description": "Developed a program in Java for a LEGO MINDSTORMS robot equipped with a color sensor and an ultrasonic sensor to autonomously retrieve pucks. The robot achieved a performance of 9 pucks in 1m50s on a 2m × 3m play field, as part of a collaborative team project with regular reporting, documentation, and a final defense.",
-      "tech": ["SVN", "Java", "Lego MINDSTORMS", "Lejos"],
+      "tech": [
+        "SVN",
+        "Java",
+        "Lego MINDSTORMS",
+        "Lejos"
+      ],
       "links": {
         "live": "https://drive.google.com/file/d/1QVoPxlcwQdrXL5oyKGyiN5QXJInVa7vp/view"
       },
-      "tags": ["Robotics"]
+      "tags": [
+        "Robotics"
+      ]
     }
   ],
   "awards": [
@@ -384,7 +935,7 @@
     }
   ],
   "contact": {
-    "email": "paul.guan@example.com",
+    "email": "pguan.pro@gmail.com",
     "successMessage": "Thanks for reaching out! I'll get back to you soon.",
     "errorMessage": "Something went wrong. Please try again or email me directly.",
     "privacyNote": "I'll only use your details to reply to your message."
