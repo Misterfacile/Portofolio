@@ -85,10 +85,12 @@ export const Experience = ({ items }: ExperienceProps) => {
                           {formatDate(item.from)} - {formatDate(item.to)}
                         </span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
-                        <span>{item.location}</span>
-                      </div>
+                      {item.location && (
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>{item.location}</span>
+                        </div>
+                      )}
                     </div>
 
                     <ul className="space-y-2 mb-6">
