@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ComponentProps } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
@@ -28,12 +28,12 @@ interface ContentData {
     ctaSecondaryText: string;
   };
   about: { bio: string; highlights: string[]; cvUrl: string };
-  experience: Array<any>;
-  education: Array<any>;
-  skills: any;
-  certifications: Array<any>;
-  projects: Array<any>;
-  awards: Array<any>;
+  experience: ComponentProps<typeof Experience>["items"];
+  education: ComponentProps<typeof Education>["items"];
+  skills: ComponentProps<typeof Skills>["skills"];
+  certifications: ComponentProps<typeof Certifications>["items"];
+  projects: ComponentProps<typeof Projects>["items"];
+  awards: ComponentProps<typeof Awards>["items"];
   contact: {
     email: string;
     successMessage: string;
