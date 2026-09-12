@@ -27,6 +27,16 @@
   },
   "experience": [
     {
+      "company": "Artefact",
+      "role": "Data / Software Engineer",
+      "location": "Paris - France",
+      "from": "2026-03",
+      "to": "present",
+      "logo": "/images/experiences/Artefact/Artefact.jpg",
+      "bullets": [],
+      "tech": []
+    },
+    {
       "company": "SES Satellite",
       "role": "AI/Data Engineer",
       "location": "Betzdorf - Luxembourg",
