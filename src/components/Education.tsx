@@ -21,7 +21,6 @@ export const Education = ({ items }: EducationProps) => {
     return `${year}`;
   };
 
-  // Sort items chronologically (most recent first)
   const sortedItems = [...items].sort((a, b) => {
     return new Date(b.from).getTime() - new Date(a.from).getTime();
   });
@@ -35,7 +34,6 @@ export const Education = ({ items }: EducationProps) => {
           </h2>
 
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block" />
 
             <div className="space-y-8">
@@ -45,7 +43,6 @@ export const Education = ({ items }: EducationProps) => {
                   className="relative pl-0 md:pl-20 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {/* Timeline dot */}
                   <div className="absolute left-6 top-8 w-4 h-4 rounded-full bg-primary border-4 border-background hidden md:block" />
 
                   <div className="glass rounded-xl p-8 hover-lift">

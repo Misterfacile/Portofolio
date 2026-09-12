@@ -59,7 +59,7 @@ export const Awards = ({ items }: AwardsProps) => {
                           className="w-12 h-12 object-contain"
                         />
                       ) : (
-                        <Trophy className="w-8 h-8 text-primary" /> // fallback if no logo provided
+                        <Trophy className="w-8 h-8 text-primary" />
                       )}
                     </div>
                   </div>

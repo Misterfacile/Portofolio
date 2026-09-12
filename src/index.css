@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     --background: 240 10% 3.9%;
@@ -17,7 +13,6 @@ All colors MUST be HSL.
     --popover: 240 8% 8%;
     --popover-foreground: 0 0% 98%;
 
-    /* AI/Data blue theme */
     --primary: 210 100% 60%;
     --primary-foreground: 220 70% 10%;
     
@@ -39,18 +34,15 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Gradients for AI/Data blue vibe */
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 60%), hsl(200 100% 55%));
     --gradient-mesh: radial-gradient(at 0% 0%, hsl(210 100% 25% / 0.3) 0px, transparent 50%),
                       radial-gradient(at 100% 0%, hsl(200 100% 25% / 0.2) 0px, transparent 50%),
                       radial-gradient(at 100% 100%, hsl(210 100% 25% / 0.3) 0px, transparent 50%),
                       radial-gradient(at 0% 100%, hsl(220 100% 25% / 0.2) 0px, transparent 50%);
     
-    /* Glow effects */
     --glow-primary: 0 0 20px hsl(210 100% 60% / 0.3);
     --glow-strong: 0 0 40px hsl(210 100% 60% / 0.5), 0 0 80px hsl(210 100% 60% / 0.3);
     
-    /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
@@ -66,13 +58,11 @@ All colors MUST be HSL.
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
-  /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
   }
   
-  /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -91,12 +81,10 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Gradient text */
   .gradient-text {
     @apply bg-gradient-to-r from-primary via-cyan-400 to-primary bg-clip-text text-transparent;
   }
   
-  /* Glow effects */
   .glow-sm {
     box-shadow: var(--glow-primary);
   }
@@ -105,23 +93,11 @@ All colors MUST be HSL.
     box-shadow: var(--glow-strong);
   }
   
-  /* Glass morphism */
   .glass {
     @apply bg-card/50 backdrop-blur-xl border border-primary/10;
   }
   
-  /* Hover lift */
   .hover-lift {
     @apply transition-transform duration-300 hover:-translate-y-1;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
   }
 }

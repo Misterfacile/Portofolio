@@ -34,7 +34,6 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background">
       <ParticleBackground/>
       <div className="space-y-8 max-w-md w-full px-8 z-10">
-        {/* Logo/Title */}
         <div className="text-center space-y-4">
           <div className="relative">
             <div className="absolute inset-0 blur-2xl bg-primary/20 animate-glow-pulse" />
@@ -44,7 +43,6 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           </div>
         </div>
 
-        {/* Loading Bar */}
         <div className="space-y-3">
           <div className="relative h-2 bg-muted rounded-full overflow-hidden">
             <div
@@ -57,7 +55,6 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           </p>
         </div>
 
-        {/* Animated dots */}
         <div className="flex justify-center gap-2">
           <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
           <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />

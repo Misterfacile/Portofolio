@@ -91,7 +91,6 @@ export const Contact = ({
         description: successMessage,
       });
 
-      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -99,7 +98,6 @@ export const Contact = ({
         honeypot: "",
       });
     } catch (err) {
-      // You can inspect err if needed
       toast({
         title: "Error",
         description: errorMessage,

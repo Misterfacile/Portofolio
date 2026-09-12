@@ -86,7 +86,6 @@ export const Navbar = ({ social }: NavbarProps) => {
           {/* Logo placeholder (hidden by design) */}
           <div className="w-8" />
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <button
@@ -105,7 +104,6 @@ export const Navbar = ({ social }: NavbarProps) => {
             ))}
           </div>
 
-          {/* Social Icons */}
           <div className="hidden lg:flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild className="hover:text-primary">
               <a
@@ -129,7 +127,6 @@ export const Navbar = ({ social }: NavbarProps) => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <Button
             variant="ghost"
             size="icon"
@@ -140,7 +137,6 @@ export const Navbar = ({ social }: NavbarProps) => {
           </Button>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden mt-4 glass rounded-lg p-4 animate-fade-in">
             <div className="flex flex-col gap-2">

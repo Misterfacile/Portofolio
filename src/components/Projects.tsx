@@ -58,7 +58,6 @@ export const Projects = ({ items }: ProjectsProps) => {
             Featured Projects
           </h2>
 
-          {/* Filter buttons */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
             {allTags.map((tag) => (
               <Button
@@ -77,7 +76,6 @@ export const Projects = ({ items }: ProjectsProps) => {
             ))}
           </div>
 
-          {/* Projects grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {filteredProjects.map((project, index) => (
               <div
@@ -85,7 +83,6 @@ export const Projects = ({ items }: ProjectsProps) => {
                 className="glass rounded-xl overflow-hidden hover-lift animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                {/* Project image carousel */}
                 <div className="aspect-video bg-muted relative overflow-hidden">
                   {project.images.length === 1 ? (
                     <img
@@ -125,13 +122,11 @@ export const Projects = ({ items }: ProjectsProps) => {
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
                 </div>
 
-                {/* Project info */}
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-2">
                     <h3 className="text-xl font-bold">{project.title}</h3>
                   </div>
 
-                  {/* Date range */}
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
                     <span>
@@ -143,7 +138,6 @@ export const Projects = ({ items }: ProjectsProps) => {
                     {project.description}
                   </p>
 
-                  {/* Tech stack */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.slice(0, 6).map((tech, i) => (
                       <span
@@ -155,7 +149,6 @@ export const Projects = ({ items }: ProjectsProps) => {
                     ))}
                   </div>
 
-                  {/* Links */}
                   <div className="flex flex-wrap gap-2">
                     {project.links.live && (
                       <Button

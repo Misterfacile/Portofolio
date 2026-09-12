@@ -80,7 +80,6 @@ const Index = () => {
         <Navbar social={content.meta.social} />
       </header>
 
-      {/* CONTENT */}
       <main className="pt-20 relative z-10">
         <section
           id="home"

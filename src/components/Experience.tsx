@@ -46,7 +46,6 @@ export const Experience = ({ items }: ExperienceProps) => {
           </h2>
 
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent" />
 
             <div className="space-y-12">
@@ -56,7 +55,6 @@ export const Experience = ({ items }: ExperienceProps) => {
                   className="relative pl-8 md:pl-20 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {/* Timeline dot */}
                   <div className="absolute left-0 md:left-8 top-6 w-4 h-4 -translate-x-1/2">
                     <div className="w-full h-full rounded-full bg-primary glow-sm" />
                   </div>

@@ -36,7 +36,6 @@ export const Certifications = ({ items }: CertificationsProps) => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex flex-col h-full">
-                  {/* Logo */}
                   <div className="mb-4 flex items-center justify-center h-20">
                     <img
                       src={item.logo}
