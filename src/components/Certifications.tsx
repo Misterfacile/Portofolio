@@ -1,5 +1,6 @@
 import { ExternalLink, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/utils";
 
 interface CertificationItem {
   title: string;
@@ -38,7 +39,7 @@ export const Certifications = ({ items }: CertificationsProps) => {
                 <div className="flex flex-col h-full">
                   <div className="mb-4 flex items-center justify-center h-20">
                     <img
-                      src={item.logo}
+                      src={asset(item.logo)}
                       alt={`${item.issuer} logo`}
                       className="max-h-full max-w-full object-contain"
                       loading="lazy"

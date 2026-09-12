@@ -1,4 +1,5 @@
 import { GraduationCap, Calendar, Award } from "lucide-react";
+import { asset } from "@/lib/utils";
 
 interface EducationItem {
   school: string;
@@ -50,7 +51,7 @@ export const Education = ({ items }: EducationProps) => {
                       {item.badge ? (
                         <div className="w-12 h-12 rounded-lg overflow-hidden bg-primary/10 flex items-center justify-center">
                           <img
-                            src={item.badge}
+                            src={asset(item.badge)}
                             alt={`${item.school} logo`}
                             className="w-full h-full object-cover"
                             loading="lazy"

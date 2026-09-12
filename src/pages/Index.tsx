@@ -49,7 +49,7 @@ const Index = () => {
   const [showNavbar, setShowNavbar] = useState(false);   // drives NAVBAR only
 
   useEffect(() => {
-    fetch("/content.json")
+    fetch(`${import.meta.env.BASE_URL}content.json`)
       .then((r) => r.json())
       .then((data) => setContent(data))
       .catch((e) => console.error("Error loading content:", e));

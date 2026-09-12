@@ -1,4 +1,5 @@
 import { Calendar, MapPin } from "lucide-react";
+import { asset } from "@/lib/utils";
 
 interface ExperienceItem {
   company: string;
@@ -64,7 +65,7 @@ export const Experience = ({ items }: ExperienceProps) => {
                       <div className="flex items-center gap-3 mb-1">
                         {item.logo && (
                           <img
-                            src={item.logo}
+                            src={asset(item.logo)}
                             alt={`${item.company} logo`}
                             className="w-8 h-8 object-contain rounded"
                           />
@@ -119,7 +120,7 @@ export const Experience = ({ items }: ExperienceProps) => {
                             className="overflow-hidden rounded-lg border border-border transition-transform hover:scale-[1.02]"
                           >
                             <img
-                              src={src}
+                              src={asset(src)}
                               alt={`${item.company} work ${i + 1}`}
                               className="w-full h-40 sm:h-44 object-cover"
                               loading="lazy"

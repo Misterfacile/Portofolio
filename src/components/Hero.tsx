@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { asset } from "@/lib/utils";
 
 interface HeroProps {
   headline: string;
@@ -36,7 +37,7 @@ export const Hero = ({
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl animate-glow-pulse" />
               <img
-                src={profileImage}
+                src={asset(profileImage)}
                 alt="Paul GUAN"
                 className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary/30 object-cover animate-float"
                 loading="eager"

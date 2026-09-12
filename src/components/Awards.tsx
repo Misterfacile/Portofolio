@@ -1,5 +1,6 @@
 import { Trophy, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/utils";
 
 interface AwardItem {
   title: string;
@@ -54,7 +55,7 @@ export const Awards = ({ items }: AwardsProps) => {
                     <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center overflow-hidden">
                       {item.logo ? (
                         <img
-                          src={item.logo}
+                          src={asset(item.logo)}
                           alt={`${item.title} logo`}
                           className="w-12 h-12 object-contain"
                         />

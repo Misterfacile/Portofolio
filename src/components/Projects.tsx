@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { asset } from "@/lib/utils";
 
 interface ProjectItem {
   title: string;
@@ -86,7 +87,7 @@ export const Projects = ({ items }: ProjectsProps) => {
                 <div className="aspect-video bg-muted relative overflow-hidden">
                   {project.images.length === 1 ? (
                     <img
-                      src={project.images[0]}
+                      src={asset(project.images[0])}
                       alt={project.title}
                       className="w-full h-full object-cover"
                       loading={index < 2 ? "eager" : "lazy"}
@@ -107,7 +108,7 @@ export const Projects = ({ items }: ProjectsProps) => {
                         {project.images.map((image, i) => (
                           <CarouselItem key={i}>
                             <img
-                              src={image}
+                              src={asset(image)}
                               alt={`${project.title} - Image ${i + 1}`}
                               className="w-full h-full object-cover"
                               loading="lazy"
