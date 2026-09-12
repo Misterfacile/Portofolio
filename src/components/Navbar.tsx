@@ -37,31 +37,39 @@ export const Navbar = ({ social }: NavbarProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const ids = navItems.map((n) => n.id);
-      const els = ids
-        .map((id) => document.getElementById(id))
+      const els = navItems
+        .map((n) => document.getElementById(n.id))
         .filter(Boolean) as HTMLElement[];
 
       if (els.length === 0) return;
 
-      let closestSection = els[0].id;
-      let closestDistance = Math.abs(
-        els[0].getBoundingClientRect().top - HEADER_OFFSET
-      );
-
-      for (const el of els) {
-        const distance = Math.abs(el.getBoundingClientRect().top - HEADER_OFFSET);
-        if (el.getBoundingClientRect().top >= HEADER_OFFSET && distance < closestDistance) {
-          closestSection = el.id;
-          closestDistance = distance;
-        }
+      // The last section is often too short to ever reach the header line,
+      // so once the page is scrolled to the end it is the active one.
+      const atBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2;
+      if (atBottom) {
+        setActiveSection(els[els.length - 1].id);
+        return;
       }
 
-      setActiveSection(closestSection);
+      // Sections are in document order: the active one is the last whose top
+      // has already passed under the header.
+      let current = els[0].id;
+      for (const el of els) {
+        if (el.getBoundingClientRect().top <= HEADER_OFFSET) current = el.id;
+      }
+
+      setActiveSection(current);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   const scrollToSection = (id: string) => {
